@@ -78,14 +78,16 @@ const Leadership = () => {
       image: "staffpics/Josiah.jpg",
       bio: `Josiah holds a master’s degree in leadership (MAL) from Pan Africa Christian University (PACU), a post graduate diploma in corporate governance from KCA University and a Bachelor of Commerce degree (Accounting) from University of Nairobi (UON)
 Currently retired he has experience and practical skills in Public financial management, audit, corporate leadership and governance, and risk management, having worked in the public sector for a period spanning over thirty (30) years. 
-He is passionate and a strong advocate of Good corporate governance, Leadership and Ethics.`
+He is passionate and a strong advocate of Good corporate governance, Leadership and Ethics.
+`
     },
     {
       name: "Solomon Nabiswa Wanyama",
       position: "Board Vice Chairman – Chair Education Committee",
       image: "staffpics/Solomon Nabiswa Wanyama.jpg",
       bio: `Solomon holds a Bachelors degree in Education from University of Nairobi (UON)
-Currently working with Higher Education Loans Board, he has wide experience in Higher Education financing, Credit Management and Administration spanning over 18 years in the public sector service. He is passionate about training, people empowerment and governance issues.`
+Currently working with Higher Education Loans Board, he has wide experience in Higher Education financing, Credit Management and Administration spanning over 18 years in the public sector service. He is passionate about training, people empowerment and governance issues.
+`
     },
     {
       name: "Beatrice Kibiti",
@@ -126,7 +128,9 @@ She is passionate about effective communication and inclusivity.`
       position: "Secretary Credit Committee",
       image: "staffpics/Fred Okoth.jpg",
       bio: `Fredrick Holds a Bachelor of Science in Information Science from Moi University and is currently pursuing Master’s degree of Science in Data Analytics at KCA University. He has also completed several professional courses in Data Science, Quantitative Analysis, Business Intelligence, and Research.
-Currently working with HELB, he has been instrumental in developing data analytics models and reporting techniques that have enhanced decision-making across the organization.`
+Currently working with HELB, he has been instrumental in developing data analytics models and reporting techniques that have enhanced decision-making across the organization. . His expertise spans tools such as Power BI, Tableau, and Python, and he has contributed significantly to high-impact projects, including the Customer Relationship Management System (CRM) and the Unified Communication System (UCS).
+He is passionate on transforming data into actionable insights and blends technical skill with strategic thinking, always aiming to bridge the gap between data and impact.
+`
     }
   ];
 
@@ -135,22 +139,30 @@ Currently working with HELB, he has been instrumental in developing data analyti
       name: "CPA John Nyakiti",
       position: "Chairperson – Supervisory Committee",
       image: "staffpics/John Nyakiti.jpg",
-      bio: `John holds a Masters in Business Administration and CPA (K). Member of ICPAK in good standing.
-Currently working with Higher Education Loans board (HELB), he is a results-driven professional with over 20 years expertise in Higher education student financing, Credit Management, strategic planning & execution, and project management.`
+      bio: `John holds of Masters in Business Administration and CPA (K). Member of ICPAK in good standing. 
+  Currently working with Higher Education Loans board (HELB), he is Results-driven professional with over 20 years expertise in the Higher education student financing, Credit Management, strategic planning & execution, and project management.
+  He is passionate in driving innovation by fostering a culture of creativity and continuous improvement, leveraging data-driven insights to facilitate sound decision making and creation of a forward-thinking organization.
+`
     },
     {
       name: "Kennedy S. Lengoiboni",
       position: "Secretary – Supervisory Committee",
       image: "staffpics/Ken lengoiboni.jpg",
-      bio: `Kennedy holds both a Bachelor's and a Master’s degree in economics. He has further enhanced his professional expertise through management and leadership training at ESAMI and the Kenya School of Government.
-Currently serving in the Debt Management Department at HELB, he has over 19 years of experience in credit management, loan recovery, and customer experience.`
+      bio: `Kennedy holds both a Bachelor's and a Master’s degree in economics. He has further enhanced his professional expertise through management and leadership training at the Eastern and Southern Africa Management Institute (ESAMI) and the Kenya School of Government (KSG).
+Currently serving in the Debt Management Department at the Higher Education Loans Board (HELB), he has over 19 years of experience in credit management, loan recovery, and customer experience. His career reflects a deep commitment to financial discipline and operational efficiency.
+He passionate and a firm advocate of accountability, transparency, and integrity principles that continue to guide his oversight role within the HELB SACCO.
+`
     },
     {
       name: "CPA Kerin Lidoroh",
       position: "Member – Supervisory Committee",
       image: "staffpics/Kerin.jpg",
       bio: `Kerin holds a Master’s Degree in Business Administration (Finance) from the University of Nairobi and a Bachelor’s degree in Commerce (Accounting Option) from the Catholic University of Eastern Africa.
-Currently with HELB as a Deputy Director Financial Accounting, she has over 20 years’ experience in Finance and Accountancy in both private and public sectors.`
+Currently with Higher Education loans Board (HELB) as a Deputy Director Financial Accounting, she has over 20 years’ experience in the field of Finance and Accountancy in both private and public sectors of the Kenyan economy. She is a Certified Public Accountant of Kenya [CPAK] and a member of the Institute of Certified Public Accountants, Kenya (ICPAK) in good standing. She is also a full member of the Association of Women Accountants of Kenya (AWAK) in good standing. 
+She has attended various leadership courses such as the Senior Management Course (SMC) and Strategic Leadership Development Programme (SLDP) all from the Kenya School of Management. 
+She is passionate and a strong advocate in financial transferency and accountability. 
+
+`
     }
   ];
 
@@ -159,7 +171,7 @@ Currently with HELB as a Deputy Director Financial Accounting, she has over 20 y
       name: "Elvis Otieno Okeyo",
       position: "Chief Executive Officer (CEO)",
       image: "staffpics/Okeyo.jpg",
-      bio: `Elvis Otieno Okeyo is a seasoned Accountant with extensive experience in financial management and accounting. He holds a Master of Business Administration - Finance from the University of Nairobi and Bachelor of Commerce - Finance option from The Technical University of Kenya.`
+      bio: `Elvis Otieno Okeyo is a seasoned Accountant with extensive experience in financial management and accounting. He holds a Master of Business Administration - Finance from the University of Nairobi and Bachelor of Commerce - Finance option from The Technical University of Kenya. In addition, he is a Certified Public Accountant of Kenya (CPA-K) and a member of Institute of Certified Public Accountant of Kenya in good standing.`
     },
     {
       name: "Samuel Chege Ngariuri",
@@ -171,7 +183,7 @@ Currently with HELB as a Deputy Director Financial Accounting, she has over 20 y
       name: "Martin Ochieng Onyango",
       position: "Assistant Accountant",
       image: "staffpics/Martin Ochieng Onyango.jpg",
-      bio: `Martin Ochieng is a dedicated finance professional with a Bachelor of Commerce degree in Finance from Taita Taveta University and a CPA II holder. He has over three years of hands-on experience in financial reporting, reconciliation, and budgeting.`
+      bio: `Martin Ochieng is a dedicated finance professional with a Bachelor of Commerce degree in Finance from Taita Taveta University and a CPA II holder. He currently serves as an Assistant Accountant at HELB SACCO, where he has accumulated over three years of hands-on experience in financial reporting, reconciliation, and budgeting. Martin is known for his attention to detail, strong analytical skills, and commitment to maintaining accurate financial records. His goal is to continue advancing in the accounting field while contributing to the financial growth and stability of the organization.`
     }
   ];
 

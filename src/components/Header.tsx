@@ -29,7 +29,18 @@ const Header = () => {
   ];
 
   // ✅ Reusable Dropdown Component
-  const Dropdown = ({ title, items, dropdownKey }: { title: string; items: { title: string; href: string }[]; dropdownKey: string }) => (
+  const Dropdown = ({
+  title,
+  items,
+  dropdownKey,
+}: {
+  title: string;
+  items: { title: string; href: string }[];
+  dropdownKey: string;
+}) => {
+  const isOpen = activeDropdown === dropdownKey;
+
+  return (
     <div
       className="relative"
       onMouseEnter={() => setActiveDropdown(dropdownKey)}
@@ -39,21 +50,28 @@ const Header = () => {
         <span>{title}</span>
         <ChevronDown className="w-4 h-4" />
       </button>
-      {activeDropdown === dropdownKey && (
-        <div className="absolute top-full left-0 mt-2 w-64 bg-white border border-gray-200 rounded-lg shadow-xl z-50">
-          {items.map((item, index) => (
-            <Link
-              key={index}
-              to={item.href}
-              className="block px-4 py-3 text-gray-700 hover:bg-helb-green-50 hover:text-helb-green-600 transition-colors first:rounded-t-lg last:rounded-b-lg"
-            >
-              {item.title}
-            </Link>
-          ))}
-        </div>
-      )}
+
+      {/* Always render, but show/hide via classes */}
+      <div
+        className={`absolute top-full left-0 mt-2 w-64 bg-white border border-gray-200 rounded-lg shadow-xl z-50 transition-all duration-200
+          ${isOpen ? 'opacity-100 visible pointer-events-auto' : 'opacity-0 invisible pointer-events-none'}
+        `}
+      >
+        {items.map((item, index) => (
+          <Link
+            key={index}
+            to={item.href}
+            className="block px-4 py-3 text-gray-700 hover:bg-helb-green-50 hover:text-helb-green-600 transition-colors first:rounded-t-lg last:rounded-b-lg"
+          >
+            {item.title}
+          </Link>
+        ))}
+      </div>
     </div>
   );
+};
+
+
 
   return (
     <>

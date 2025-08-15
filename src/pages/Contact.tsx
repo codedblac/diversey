@@ -48,58 +48,7 @@ const Contact = () => {
     });
   };
 
-  const fosaBranches = [
-    {
-      branch: "FOSA Manager - ELDORET",
-      email: "fosaeldoret@helbsacco.com",
-      location: "Moi Teaching & Referral Hospital"
-    },
-    {
-      branch: "FOSA Manager - KENYATTA",
-      email: "fosakenyatta@helbsacco.com", 
-      location: "Kenyatta National Hospital"
-    },
-    {
-      branch: "FOSA Manager - KISII",
-      email: "fosakisii@helbsacco.com",
-      location: "Kisii General Hospital"
-    },
-    {
-      branch: "FOSA Manager - MOMBASA",
-      email: "fosamombasa@helbsacco.com",
-      location: "Coast General Hospital"
-    },
-    {
-      branch: "FOSA Manager - NAKURU",
-      email: "fosanakuru@helbsacco.com",
-      location: "Rift Valley Provincial General Hospital"
-    },
-    {
-      branch: "FOSA Manager - KAKAMEGA",
-      email: "fosakakamega@helbsacco.com",
-      location: "Western Provincial General Hospital"
-    },
-    {
-      branch: "FOSA Manager - KISUMU",
-      email: "fosakisumu@helbsacco.com",
-      location: "New Nyanza General Hospital"
-    },
-    {
-      branch: "FOSA Manager - MERU",
-      email: "fosameru@helbsacco.com",
-      location: "Meru District Hospital"
-    },
-    {
-      branch: "FOSA Manager - NYERI",
-      email: "fosanyeri@helbsacco.com",
-      location: "Central Provincial General Hospital"
-    },
-    {
-      branch: "FOSA Manager - NAIROBI",
-      email: "fosaNairobi@helbsacco.com",
-      location: "HELB Centre, Nairobi"
-    }
-  ];
+  
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -260,32 +209,7 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* FOSA Branches */}
-          <div className="animate-on-scroll">
-            <h2 className="text-3xl font-bold text-helb-green-700 mb-8">
-              Any FOSA Branch nationwide
-            </h2>
-            <div className="overflow-x-auto">
-              <table className="w-full bg-white rounded-lg shadow-lg">
-                <thead className="bg-helb-green-700 text-white">
-                  <tr>
-                    <th className="px-6 py-4 text-left">Contact</th>
-                    <th className="px-6 py-4 text-left">Email Address</th>
-                    <th className="px-6 py-4 text-left">Physical Address</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {fosaBranches.map((branch, index) => (
-                    <tr key={index} className="border-b border-gray-200 hover:bg-gray-50">
-                      <td className="px-6 py-4 font-medium">{branch.branch}</td>
-                      <td className="px-6 py-4 text-helb-green-600">{branch.email}</td>
-                      <td className="px-6 py-4">{branch.location}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
+          
         </div>
       </section>
 
