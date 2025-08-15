@@ -115,7 +115,7 @@ const HeroSection = () => {
                 </Button>
                 <Button 
                   size="lg" 
-                   onClick={() => navigate('/about')}
+                  onClick={() => navigate('/about')}
                   className="border-white bg-helb-gold-500 text-white hover:bg-white hover:text-helb-green-700 px-10 py-6 text-lg font-semibold rounded-xl backdrop-blur-sm"
                 >
                   Learn More
@@ -127,19 +127,21 @@ const HeroSection = () => {
       </div>
 
       {/* Dots Navigation */}
-      <div className="absolute bottom-12 left-12 z-20 flex space-x-4">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentSlide(index)}
-            className={`w-4 h-4 rounded-full transition-all duration-300 ${
-              index === currentSlide 
-                ? 'bg-helb-gold-400 scale-125' 
-                : 'bg-white/50 hover:bg-white/70'
-            }`}
-          />
-        ))}
-      </div>
+<div className="absolute bottom-12 left-12 z-20 flex space-x-4">
+  {slides.map((_, index) => (
+    <button
+      key={index}
+      onClick={() => setCurrentSlide(index)}
+      aria-label={`Go to slide ${index + 1}`}  // <-- Add this for accessibility
+      className={`w-4 h-4 rounded-full transition-all duration-300 ${
+        index === currentSlide
+          ? 'bg-helb-gold-400 scale-125'
+          : 'bg-white/50 hover:bg-white/70'
+      }`}
+    />
+  ))}
+</div>
+
     </section>
   );
 };
