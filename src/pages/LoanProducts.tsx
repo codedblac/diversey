@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { Link } from 'react-router-dom';
 
 const LoanProducts = () => {
   useEffect(() => {
@@ -120,6 +121,7 @@ const LoanProducts = () => {
         "In the event of dishonesty on the part of the member the loan will revert to normal interest rate of 12% and a penalty of 5% charged on the initial principal loan"
       ]
     },
+  
     {
       id: 9,
       title: "Self-Guaranteed Loan",
@@ -132,7 +134,63 @@ const LoanProducts = () => {
         "Maximum amount to be the available share deposit balance",
         "Member will keep his/her total loans within the deposits during the repayment of the loan."
       ]
-    }
+    },
+
+    {
+  id: 10,
+  title: "Senior (Retirees) Scheme/Products",
+  description: "This scheme is aimed at retaining the retired members of the SACCO. Eligible for retirees who had been members before retirement, allowing them to continue enjoying SACCO benefits under the senior members club.",
+  image: "https://images.pexels.com/photos/3184394/pexels-photo-3184394.jpeg?auto=compress&cs=tinysrgb&w=800",
+  details: [
+    "Member will keep his/her total loans within the deposits during repayment.",
+    "Rejoining members to pay Kshs 1,000 (for those who exited and want to rejoin).",
+    "Minimum monthly contribution: Ksh 1,000.",
+    "Can withdraw share deposits provided remaining amount covers outstanding loans.",
+    "Monthly contributions may be retained from Kshs 12,000 interest/dividends.",
+    "Loans repayable within a maximum of 36 months (3 years).",
+    "Loans will be guaranteed like any other SACCO loans.",
+    "Eligible members must have a consistent income or pension.",
+    "May require check-off from pension administrator, direct debit, or standing order.",
+    "A copy of the retirement letter should be attached.",
+    "Interest rate: 12% p.a.",
+    "Loan limit is 3x the member's deposit.",
+    "Retirees enjoy full privileges and rights like all other members."
+  ]
+},
+{
+  id: 11,
+  title: "Dividend Advance / Diva Advance",
+  description: "This product allows members to access part of their dividend in advance, before official declaration at the AGM.",
+  image: "https://images.pexels.com/photos/4386430/pexels-photo-4386430.jpeg?auto=compress&cs=tinysrgb&w=800",
+  details: [
+    "Applicant’s loans and deposit payments must be up-to-date (no default).",
+    "Application form must be filled.",
+    "Advance amount is up to 50% of net dividend from the previous year.",
+    "Subject to the member's expected entitlement for the current year.",
+    "SACCO may defer the advance if funds or other requirements are not met.",
+    "Guarantors: Member's anticipated dividend/interest.",
+    "Advance is available only between January and the AGM date.",
+    "A 5% commission/processing fee is charged and deducted from the final balance."
+  ]
+},
+{
+  id: 12,
+  title: "Mdosi Junior Savings Account",
+  description: "Designed for children under 18, this savings account allows parents to save on behalf of their children and teach them the value of financial planning early.",
+  image: "https://images.pexels.com/photos/618158/pexels-photo-618158.jpeg?auto=compress&cs=tinysrgb&w=800",
+  details: [
+    "Account is in the child’s name; operated by the parent.",
+    "Child’s birth certificate required for account opening.",
+    "Opening and minimum operating balance: Kshs 1,000.",
+    "Minimum monthly contribution: Kshs 1,000.",
+    "Interest: 10% p.a. on deposits above Kshs 5,000.",
+    "Withdrawals limited to four times a year.",
+    "At age 18, account can be converted to normal SACCO membership."
+  ]
+}
+
+
+
   ];
 
   return (
@@ -255,18 +313,40 @@ const LoanProducts = () => {
             ))}
           </div>
 
+
+
+          {/* Methods of Payment & Charges */}
+<div className="animate-on-scroll bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-lg shadow-md">
+  <h3 className="text-2xl font-bold text-yellow-700 mb-4">
+    Methods of Payment of Loans and Charges
+  </h3>
+  <ul className="list-disc list-inside text-gray-700 space-y-2">
+    <li>Payments can be made via Cash, Mpesa, Cheque, or Bank Transfer. Payment mode may attract a fee.</li>
+    <li>Instant, Emergency, and Education/School Fees loans are prioritized for processing.</li>
+  </ul>
+  <div className="mt-4 text-sm text-red-700 font-medium">
+    <p>Note: Total member loans should not at any point exceed <strong>4 times</strong> their deposits.</p>
+    <p>All members’ information is shared with the <strong>Credit Reference Bureau (CRB)</strong>.</p>
+  </div>
+</div>
+
+
+
           {/* Call to Action */}
           <div className="mt-16 text-center animate-on-scroll">
-            <div className="bg-gradient-to-r from-helb-green-600 to-helb-green-700 rounded-lg p-8 text-white">
-              <h3 className="text-2xl font-bold mb-4">Ready to Apply for a Loan?</h3>
-              <p className="text-lg mb-6">
-                Contact us today to learn more about our loan products and start your application process.
-              </p>
-              <button className="bg-helb-gold-500 hover:bg-helb-gold-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
-                Contact Us
-              </button>
-            </div>
-          </div>
+  <div className="bg-gradient-to-r from-helb-green-600 to-helb-green-700 rounded-lg p-8 text-white">
+    <h3 className="text-2xl font-bold mb-4">Ready to Apply for a Loan?</h3>
+    <p className="text-lg mb-6">
+      Contact us today to learn more about our loan products and start your application process.
+    </p>
+    <Link to="/contact">
+      <button className="bg-helb-gold-500 hover:bg-helb-gold-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+        Contact Us
+      </button>
+    </Link>
+  </div>
+</div>
+
         </div>
       </section>
 

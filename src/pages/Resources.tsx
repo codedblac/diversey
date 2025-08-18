@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -26,41 +25,19 @@ const Resources = () => {
 
   const resources = [
     {
-      title: "HELB Sacco By-laws",
-      description: "Official governing regulations and procedures for HELB Sacco members",
-      type: "PDF",
-      icon: <FileText className="w-6 h-6" />
-    },
-    {
       title: "Membership Application Form",
       description: "Complete form for new membership registration",
       type: "PDF",
-      icon: <FileText className="w-6 h-6" />
+      icon: <FileText className="w-6 h-6" />,
+      file: "/downloads/MEMBERSHIP-APPLICATION-FORM.pdf" // 👈 Actual path in public folder
     },
     {
-      title: "Loan Application Forms",
-      description: "Various loan application forms for different loan products",
+      title: "Nominee Forms",
+      description: "Form to nominate a beneficiary",
       type: "PDF",
-      icon: <FileText className="w-6 h-6" />
+      icon: <FileText className="w-6 h-6" />,
+      file: "/downloads/Nominee_Form.pdf" // 👈 Actual path in public folder
     },
-    {
-      title: "Annual Report 2023",
-      description: "Comprehensive annual report showcasing HELB Sacco's performance",
-      type: "PDF",
-      icon: <FileText className="w-6 h-6" />
-    },
-    {
-      title: "Interest Rates Schedule",
-      description: "Current interest rates for loans and savings products",
-      type: "PDF",
-      icon: <FileText className="w-6 h-6" />
-    },
-    {
-      title: "Terms and Conditions",
-      description: "General terms and conditions for HELB Sacco services",
-      type: "PDF",
-      icon: <FileText className="w-6 h-6" />
-    }
   ];
 
   const features = [
@@ -76,7 +53,7 @@ const Resources = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="bg-helb-green-700 text-white py-16">
         <div className="container mx-auto px-4">
@@ -102,7 +79,7 @@ const Resources = () => {
             {/* Features */}
             <div className="animate-on-scroll">
               <h2 className="text-3xl font-bold text-helb-green-700 mb-6">
-                Why Choose HELB Sacco?
+                Why Choose HELB REGULATED Non-WDT Sacco?
               </h2>
               <ul className="space-y-3">
                 {features.map((feature, index) => (
@@ -122,23 +99,30 @@ const Resources = () => {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {resources.map((resource, index) => (
-                <Card key={index} className="hover-lift cursor-pointer transition-all duration-300">
-                  <CardContent className="p-6">
-                    <div className="flex items-start space-x-4">
-                      <div className="w-12 h-12 bg-helb-green-100 rounded-lg flex items-center justify-center text-helb-green-600">
-                        {resource.icon}
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="font-semibold text-lg mb-2">{resource.title}</h3>
-                        <p className="text-gray-600 text-sm mb-3">{resource.description}</p>
-                        <div className="flex items-center justify-between">
-                          <span className="text-xs bg-gray-100 px-2 py-1 rounded">{resource.type}</span>
-                          <Download className="w-4 h-4 text-helb-green-600" />
+                <a
+                  key={index}
+                  href={resource.file}
+                  download
+                  className="block hover-lift transition-all duration-300"
+                >
+                  <Card className="cursor-pointer">
+                    <CardContent className="p-6">
+                      <div className="flex items-start space-x-4">
+                        <div className="w-12 h-12 bg-helb-green-100 rounded-lg flex items-center justify-center text-helb-green-600">
+                          {resource.icon}
+                        </div>
+                        <div className="flex-1">
+                          <h3 className="font-semibold text-lg mb-2">{resource.title}</h3>
+                          <p className="text-gray-600 text-sm mb-3">{resource.description}</p>
+                          <div className="flex items-center justify-between">
+                            <span className="text-xs bg-gray-100 px-2 py-1 rounded">{resource.type}</span>
+                            <Download className="w-4 h-4 text-helb-green-600" />
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </CardContent>
-                </Card>
+                    </CardContent>
+                  </Card>
+                </a>
               ))}
             </div>
           </div>

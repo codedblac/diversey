@@ -18,7 +18,7 @@ const Header = () => {
   // ✅ Keep: About dropdown
   const aboutUsItems = [
     { title: 'Who We Are', href: '/about' },
-    { title: 'Become a Member', href: '/membership' },
+    // { title: 'Become a Member', href: '/membership' },
     { title: 'Management Board Of Directors', href: '/leadership' },
   ];
 
@@ -79,11 +79,11 @@ const Header = () => {
       <div className="bg-helb-green-800 text-white py-2 px-4">
         <div className="container mx-auto flex justify-between items-center text-sm">
           <div className="flex items-center space-x-6">
-            <span>📧 info@helbsacco.com</span>
-            <span>📞 +254 123456789</span>
+            <span>📧 info@memberservices.co.ke</span>
+            <span>📞 +254 711052499/799</span>
           </div>
           <div className="hidden md:flex items-center space-x-4">
-            <span>HELB SACCO SOCIETY LTD P.O. Box 11607 - 0400, NAIROBI</span>
+            <span>HELB REGULATED NON-WDT SACCO SOCIETY LTD P.O. Box 69489 - 0400, NAIROBI</span>
           </div>
         </div>
       </div>
@@ -102,15 +102,24 @@ const Header = () => {
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
               <Link to="/" className="text-gray-700 hover:text-helb-green-600 font-medium transition-colors">HOME</Link>
-              <Dropdown title="ABOUT" items={aboutUsItems} dropdownKey="about" />
+              <Dropdown title="ABOUT US" items={aboutUsItems} dropdownKey="about" />
               <Dropdown title="PRODUCTS" items={productsItems} dropdownKey="products" />
+              <Link
+                to="/membership"
+                className="text-gray-700 hover:text-helb-green-600 font-medium transition-colors"
+              >
+                MEMBERSHIP
+              </Link>
               <Link to="/resources" className="text-gray-700 hover:text-helb-green-600 font-medium transition-colors">DOWNLOADS</Link>
               <Link to="/faqs" className="text-gray-700 hover:text-helb-green-600 font-medium transition-colors">FAQS</Link>
               <Link to="/contact" className="text-gray-700 hover:text-helb-green-600 font-medium transition-colors">CONTACT US</Link>
-              {/* Login Button */}
-              <Link to="/login">
-                <Button className="bg-helb-green-600 hover:bg-helb-green-700 text-white">Login</Button>
-              </Link>
+              {/* Login Button (Desktop) */}
+              <a href="https://members.helbsacco.co.ke/site/login">
+              <Button className="bg-helb-green-600 hover:bg-helb-green-700 text-white">
+              Login
+              </Button>
+              </a>
+
             </nav>
 
             {/* Mobile Menu Button */}
@@ -134,6 +143,13 @@ const Header = () => {
                   ))}
                 </div>
               </div>
+              
+              <Link
+                to="/membership"
+                className="block text-gray-700 hover:text-helb-green-600 font-medium"
+              >
+                MEMBERSHIP
+              </Link>
 
               <div>
                 <span className="block text-gray-700 font-medium mb-2">PRODUCTS</span>

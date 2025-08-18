@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { CheckCircle, Users, FileText, CreditCard } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Membership = () => {
   const individualRequirements = [
@@ -12,6 +13,9 @@ const Membership = () => {
     "Attach colored passport size photograph",
     "Attach a copy of your KRA PIN Certificate"
   ];
+
+const navigate = useNavigate();
+
 
   const jointRequirements = [
     "Complete and submit the Joint Membership Application Form",
@@ -80,7 +84,7 @@ const Membership = () => {
             <div className="space-y-6">
               <h2 className="text-3xl font-bold text-helb-green-800">Become a Member</h2>
               <p className="text-gray-700 leading-relaxed">
-                HELB SACCO is a member-based organization whose membership is open to all 
+                HELB REGULATED Non-WDT SACCO is a member-based organization whose membership is open to all 
                 Kenyans anywhere in the world. Sacco admits eligible individuals, groups, and 
                 institutions/companies for membership of the Society upon fulfillment of 
                 membership opening requirements.
@@ -217,21 +221,24 @@ const Membership = () => {
           </div>
 
           {/* CTA Section */}
-          <div className="text-center">
-            <h3 className="text-2xl font-bold text-helb-green-800 mb-4">Ready to Join?</h3>
-            <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-              Take the first step towards financial freedom and become a member of HELB SACCO today. 
-              Our team is ready to assist you through the membership process.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-helb-green-600 hover:bg-helb-green-700">
-                Apply for Membership
-              </Button>
-              <Button size="lg" variant="outline" className="border-helb-green-600 text-helb-green-600">
-                Contact Us
-              </Button>
-            </div>
-          </div>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+  <Button
+    size="lg"
+    className="bg-helb-green-600 hover:bg-helb-green-700"
+    onClick={() => navigate('/resources')} //  redirects to /resources
+  >
+    Apply for Membership
+  </Button>
+  <Button
+    size="lg"
+    variant="outline"
+    className="border-helb-green-600 text-helb-green-600"
+    onClick={() => navigate('/contact')} //  redirects to /contact
+  >
+    Contact Us
+  </Button>
+</div>
+
         </div>
       </section>
 

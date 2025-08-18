@@ -138,7 +138,7 @@ He is passionate on transforming data into actionable insights and blends techni
     {
       name: "CPA John Nyakiti",
       position: "Chairperson – Supervisory Committee",
-      image: "staffpics/John Nyakiti.jpg",
+      image: "staffpics/nyatiki.jpg",
       bio: `John holds of Masters in Business Administration and CPA (K). Member of ICPAK in good standing. 
   Currently working with Higher Education Loans board (HELB), he is Results-driven professional with over 20 years expertise in the Higher education student financing, Credit Management, strategic planning & execution, and project management.
   He is passionate in driving innovation by fostering a culture of creativity and continuous improvement, leveraging data-driven insights to facilitate sound decision making and creation of a forward-thinking organization.

@@ -36,14 +36,14 @@ const Index = () => {
       description: "Flexible savings accounts with competitive interest rates to help you build wealth.",
       image: "img/helb2.jpg",
       link: "/savings",
-      features: ["FOSA Ordinary Savings", "Fixed Deposit Accounts", "Holiday Savings", "Junior Savers Account"]
+      features: ["Mdosi Junior Savings Account ", "Withdrawable Savings", "Share capital Savings ", "Deposits "]
     },
     {
       title: "Loan Products",
       description: "Affordable loans with flexible repayment terms for all your financial needs.",
       image: "img/helb3.jpg",
       link: "/loans",
-      features: ["Development Loans", "Emergency Loans", "School Fees Loans", "Salary Advance"]
+      features: ["Development Loans", "Emergency Loans", "Education loan", "Utility loan"]
     },
     
   ];
@@ -307,7 +307,7 @@ const Index = () => {
       <div className="animate-on-scroll slide-in-left">
         <img
           src="/img/helb5.jpg"
-          alt="HELB Sacco Team"
+          alt="HELB REGULATED Non-WDT Sacco Team"
           className="rounded-2xl shadow-2xl w-full h-[500px] object-cover"
         />
       </div>
@@ -316,7 +316,7 @@ const Index = () => {
       <div className="animate-on-scroll slide-in-right">
         <h2 className="text-4xl font-bold text-helb-green-800 mb-6">Why Join Us</h2>
         <p className="text-lg text-gray-600 mb-8">
-          Discover why thousands trust HELB Sacco for secure and flexible financial solutions.
+          Discover why thousands trust HELB REGULATED Non-WDT Sacco for secure and flexible financial solutions.
         </p>
         <ul className="space-y-5">
           {[
@@ -353,7 +353,7 @@ const Index = () => {
       <section className="py-24 bg-gradient-to-br from-helb-green-700 to-helb-green-800 text-white">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-5xl mx-auto animate-on-scroll">
-            <h2 className="text-5xl font-bold mb-8">Join HELB Sacco Today</h2>
+            <h2 className="text-5xl font-bold mb-8">Join HELB REGULATED Non-WDT Sacco Today</h2>
             <p className="text-xl mb-10 leading-relaxed max-w-4xl mx-auto">
               Become part of our growing family and enjoy exclusive benefits, competitive rates, 
               and personalized financial services designed just for you. Start your journey towards 
@@ -399,7 +399,7 @@ const Index = () => {
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Call us</h3>
                     <p className="mb-1 text-gray-200">Business Hours: Monday - Friday, 8:00 AM - 5:00 PM</p>
-                    <p className="text-lg font-semibold">Phone: 020 2223970</p>
+                    <p className="text-lg font-semibold">Phone: +254 711052499/799</p>
                   </div>
                 </div>
                 
@@ -410,9 +410,9 @@ const Index = () => {
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Write us</h3>
                     <p className="mb-1 text-gray-200">Email us at:</p>
-                    <p className="text-lg">info@helbsacco.com</p>
-                    <p className="text-lg">customercare@helbsacco.com</p>
-                    <p className="text-lg">publicrelations@helbsacco.com</p>
+                    <p className="text-lg">info@memberservices.co.ke</p>
+                    {/* <p className="text-lg">customercare@helbsacco.com</p>
+                    <p className="text-lg">publicrelations@helbsacco.com</p> */}
                   </div>
                 </div>
                 
@@ -422,7 +422,7 @@ const Index = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Visit us</h3>
-                    <p className="text-lg">Customer Care, HELB Centre, Tom Mboya St, Nairobi</p>
+                    <p className="text-lg">Customer Care, HELB Centre, Anniversary Towers, Nairobi</p>
                   </div>
                 </div>
               </div>
@@ -432,14 +432,14 @@ const Index = () => {
               <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
                 <div className="h-96 w-full">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8174449559437!2d36.82496131475397!3d-1.2829084990626947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d22c4e4a31%3A0x8a5e6b8e8b8b8b8b!2sTom%20Mboya%20St%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1635494400000!5m2!1sen!2ske"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8197882968157!2d36.81392007404914!3d-1.2818910987059178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d253a461ab%3A0xf1a32b0dbcf6c646!2sAnniversary%20Towers!5e0!3m2!1sen!2ske!4v1755370874923!5m2!1sen!2ske"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="HELB Sacco Location"
+                    title="HELB REGULATED Non-WDT Sacco Location"
                   ></iframe>
                 </div>
               </div>

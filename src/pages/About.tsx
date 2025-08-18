@@ -14,7 +14,7 @@ const About = () => {
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Who We Are</h1>
           <p className="text-xl max-w-3xl mx-auto">
-            Learn about HELB Sacco Society Limited and our commitment to serving our members
+            Learn about HELB REGULATED Non-WDT Sacco Society Limited and our commitment to serving our members
           </p>
         </div>
       </section>
@@ -116,7 +116,7 @@ const About = () => {
 
           {/* Additional Information */}
           <div className="bg-helb-green-50 rounded-lg p-8">
-            <h3 className="text-2xl font-bold text-helb-green-800 mb-6">Why Choose HELB Sacco?</h3>
+            <h3 className="text-2xl font-bold text-helb-green-800 mb-6">Why Choose HELB REGULATED Non-WDT Sacco?</h3>
             <div className="grid md:grid-cols-2 gap-8">
               <div>
                 <h4 className="text-lg font-semibold text-helb-green-700 mb-3">Our Core Business</h4>

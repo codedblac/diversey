@@ -10,27 +10,29 @@ const HeroSection = () => {
   const slides = [
     {
       image: "img/helb1.jpg",
-      title: "HELB Sacco Society Limited",
+      title: "HELB Regulated Non-WDT Sacco Society Limited",
       subtitle: "Your Trusted Financial Partner",
       description: "Empowering HELB employees and their families with affordable financial services and innovative solutions for a better tomorrow.",
       buttonText: "JOIN TODAY",
-      features: ["20+ Years of Excellence", "25,000+ Active Members", "Nationwide Presence"]
+      buttonLink: "/membership",
+      features: ["20+ Years of Excellence", "500+ Active Members", "Nationwide Presence"]
     },
     {
       image: "img/loan.jpg",
       title: "Affordable Loans & Savings",
       subtitle: "Achieve Your Financial Dreams",
       description: "Access competitive loan products and savings accounts designed to help you build wealth and secure your future.",
-      buttonText: "LEARN MORE",
+      buttonText: "GET STARTED",
+      buttonLink: "/membership",
       features: ["Competitive Interest Rates", "Flexible Repayment Terms", "Quick Approval Process"]
     },
     {
   image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2000",
   title: "Empowering Dreams, Enriching Lives",
-  subtitle: "Join HELB SACCO – Your Partner in Financial Growth",
+  subtitle: "Join HELB REGULATED Non-WDT SACCO – Your Partner in Financial Growth",
   description: "Plan your life, live without stress. Save, Borrow, Invest, Repay with ease.",
   buttonText: "Join Us Now",
-  buttonLink: "https://members.helbsacco.co.ke/site/login",
+  buttonLink: "/membership",
   features: [
     "Flexible Savings & Loan Options",
     "Member-Centric Financial Services",
@@ -107,12 +109,14 @@ const HeroSection = () => {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button 
-                  size="lg" 
-                  className="bg-gradient-to-r from-helb-green-600 to-helb-green-700 hover:from-helb-green-700 hover:to-helb-green-800 text-white px-10 py-6 text-lg font-semibold rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 group"
+                size="lg" 
+                onClick={() => navigate(slides[currentSlide].buttonLink)} // 👈 Dynamic navigation
+                className="bg-gradient-to-r from-helb-green-600 to-helb-green-700 hover:from-helb-green-700 hover:to-helb-green-800 text-white px-10 py-6 text-lg font-semibold rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 group"
                 >
-                  {slides[currentSlide].buttonText}
-                  <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                {slides[currentSlide].buttonText}
+                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
+
                 <Button 
                   size="lg" 
                   onClick={() => navigate('/about')}

@@ -11,8 +11,8 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-helb-gold-400">About Us</h3>
             <p className="text-sm text-gray-300 mb-4">
-              HELB Sacco Society Limited is a licensed deposit taking (DT) SACCO that was formed to serve 
-              the financial needs of HELB employees and their families. We provide affordable financial 
+              HELB REGULATED Non-WDT Sacco Society Limited is a licensed deposit taking (DT) SACCO that was formed to serve
+              the financial needs of HELB employees and their families. We provide affordable financial
               services to help our members achieve their financial goals.
             </p>
           </div>
@@ -43,11 +43,11 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-helb-gold-400">Contact</h3>
             <div className="space-y-2 text-sm text-gray-300 mb-4">
-              <p>📧 info@helbsacco.com</p>
-              <p>📞 Tel +254 123456789</p>
+              <p>📧 info@memberservices.co.ke</p>
+              <p>📞 Tel +254 711052499/799</p>
               <div className="mt-2">
-                <p className="font-medium">HELB SACCO SOCIETY</p>
-                <p>LTD P.O. Box 11607 - 0400,</p>
+                <p className="font-medium">HELB REGULATED Non-WDT SACCO SOCIETY</p>
+                <p>LTD P.O. Box 69489 - 0400,</p>
                 <p>NAIROBI, KENYA</p>
               </div>
             </div>
@@ -70,7 +70,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-helb-green-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-gray-300">
-            © {new Date().getFullYear()} Copyrights by HELB Sacco Society Limited. All Rights Reserved
+            © {new Date().getFullYear()} Copyrights by HELB REGULATED Non-WDT Sacco Society Limited. All Rights Reserved
           </p>
           
           {/* Social Media Links */}

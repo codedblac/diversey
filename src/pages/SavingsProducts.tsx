@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { Link } from 'react-router-dom';
 
 const SavingsProducts = () => {
   useEffect(() => {
@@ -26,7 +27,7 @@ const SavingsProducts = () => {
       id: 1,
       title: "Mdosi Junior Savings Account",
       description: "The objective of Mdosi Junior savings account is to provide a facility for parents to save for their children and is open to all kids below 18years.",
-      image: "mdosi.jpeg",
+      image: "img/juniour.webp",
       details: [
         "The account is opened in the child's name; however, the parent has the sole mandate to operate it",
         "Child's birth certificate required during account opening",
@@ -65,7 +66,7 @@ const SavingsProducts = () => {
     "Interest calculated monthly but paid annually",
     "Quick access of salaries",
     "All Loans, Rebates, Dividends granted channeled through the ordinary savings account",
-    "Easy access of cash: ATM and M+ banking services Transaction via mobile phone upon registration at our FOSA's or via USSD or Mobile App"
+    
   ];
 
   return (
@@ -103,7 +104,7 @@ const SavingsProducts = () => {
               
               <div className="mb-8">
                 <h3 className="text-xl font-semibold text-helb-green-600 mb-4">
-                  Salary/FOSA Ordinary Savings Account Features
+                  Salary Ordinary Savings Account Features
                 </h3>
                 <ul className="space-y-3">
                   {savingsFeatures.map((feature, index) => (
@@ -201,19 +202,49 @@ const SavingsProducts = () => {
               </div>
             ))}
           </div>
+          
+
+          {/* Advisory and Training Services */}
+<div className="animate-on-scroll bg-white rounded-lg shadow-md p-8 mt-12 border-l-4 border-helb-green-600">
+  <h2 className="text-2xl font-bold text-helb-green-700 mb-6">
+    Additional Member Services
+  </h2>
+
+  <div className="mb-6">
+    <h3 className="text-xl font-semibold text-helb-green-600 mb-2">
+      Advisory Products and Services
+    </h3>
+    <p className="text-gray-700 leading-relaxed">
+      The SACCO offers advisory services on personal financial management and investment to all its members either upon request or as found necessary. Our aim is to empower members with informed financial decisions.
+    </p>
+  </div>
+
+  <div>
+    <h3 className="text-xl font-semibold text-helb-green-600 mb-2">
+      Training Products and Services
+    </h3>
+    <p className="text-gray-700 leading-relaxed">
+      The SACCO provides continuous education and training to its members covering SACCO operations, financial management, investment, and other relevant life skills to foster personal and collective growth.
+    </p>
+  </div>
+</div>
+
+
 
           {/* Call to Action */}
           <div className="mt-16 text-center animate-on-scroll">
-            <div className="bg-gradient-to-r from-helb-green-600 to-helb-green-700 rounded-lg p-8 text-white">
-              <h3 className="text-2xl font-bold mb-4">Start Saving Today!</h3>
-              <p className="text-lg mb-6">
-                Contact us to learn more about our savings products and start building your financial future.
-              </p>
-              <button className="bg-helb-gold-500 hover:bg-helb-gold-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
-                Contact Us
-              </button>
-            </div>
-          </div>
+  <div className="bg-gradient-to-r from-helb-green-600 to-helb-green-700 rounded-lg p-8 text-white">
+    <h3 className="text-2xl font-bold mb-4">Start Saving Today!</h3>
+    <p className="text-lg mb-6">
+      Contact us to learn more about our savings products and start building your financial future.
+    </p>
+    <Link to="/contact">
+      <button className="bg-helb-gold-500 hover:bg-helb-gold-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+        Contact Us
+      </button>
+    </Link>
+  </div>
+</div>
         </div>
       </section>
 

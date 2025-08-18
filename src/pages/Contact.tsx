@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -16,6 +15,9 @@ const Contact = () => {
     subject: '',
     message: ''
   });
+
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState<{ success: boolean; message: string } | null>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -35,10 +37,33 @@ const Contact = () => {
     return () => observer.disconnect();
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Handle form submission
+    setLoading(true);
+    setStatus(null);
+
+    try {
+      const response = await fetch('https://helbsacco-backend.onrender.com/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setStatus({ success: true, message: 'Your message has been sent successfully!' });
+        setFormData({ name: '', phone: '', email: '', subject: '', message: '' });
+      } else {
+        setStatus({ success: false, message: 'Failed to send message. Please try again.' });
+      }
+    } catch (error) {
+      setStatus({ success: false, message: 'An error occurred. Please try again later.' });
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -47,8 +72,6 @@ const Contact = () => {
       [e.target.name]: e.target.value
     });
   };
-
-  
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -73,7 +96,7 @@ const Contact = () => {
                   <Mail className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="font-semibold text-lg mb-2">Email</h3>
-                <p className="text-gray-600">info@helbsacco.com</p>
+                <p className="text-gray-600">info@helbsacco.co.ke</p>
               </CardContent>
             </Card>
 
@@ -84,8 +107,8 @@ const Contact = () => {
                 </div>
                 <h3 className="font-semibold text-lg mb-2">Address</h3>
                 <p className="text-gray-600 text-sm">
-                  HELB SACCO SOCIETY LTD P.O. Box 11607 - 0400,
-                  NAIROBI STAREHE, HELB CENTRE, TOM MBOYA ST,
+                  HELB REGULATED Non-WDT SACCO SOCIETY LTD P.O. Box 69489 - 0400,
+                  NAIROBI, ANNIVERSARY TOWERS, 3RD FLOOR, TOM MBOYA STREET,
                   NAIROBI CITY
                 </p>
               </CardContent>
@@ -97,7 +120,7 @@ const Contact = () => {
                   <Phone className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="font-semibold text-lg mb-2">Phone</h3>
-                <p className="text-gray-600">Tel +254 2223970</p>
+                <p className="text-gray-600">Tel +254 711052499/799</p>
               </CardContent>
             </Card>
           </div>
@@ -111,16 +134,16 @@ const Contact = () => {
               <div className="space-y-4 mb-8">
                 <div>
                   <h3 className="font-semibold text-helb-green-600 mb-2">Call us</h3>
-                  <p className="text-gray-600 mb-1">Business Hrs a day, 5 Days a week.</p>
-                  <p className="text-gray-600">Phone: 020 2223970</p>
+                  <p className="text-gray-600 mb-1">Business hours, 5 days a week.</p>
+                  <p className="text-gray-600">Phone: +254 711052499/799</p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-helb-green-600 mb-2">Write us</h3>
-                  <p className="text-gray-600 mb-1">Email: info@helbsacco.com, customercare@helbsacco.com,</p>
-                  <p className="text-gray-600">publicrelations@helbsacco.com</p>
+                  <p className="text-gray-600 mb-1">Email: info@helbsacco.co.ke</p>
+                  <p className="text-gray-600">memberservices@helbsacco.co.ke</p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-helb-green-600 mb-2">Visit us or Find us at:</h3>
+                  <h3 className="font-semibold text-helb-green-600 mb-2">Visit us at:</h3>
                   <p className="text-gray-600">Customer Care, HELB Centre, Tom Mboya St, Nairobi</p>
                 </div>
               </div>
@@ -172,8 +195,23 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                 />
-                <Button type="submit" className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-2">
-                  SEND A MESSAGE
+
+                {status && (
+                  <p
+                    className={`text-sm ${
+                      status.success ? 'text-green-600' : 'text-red-600'
+                    }`}
+                  >
+                    {status.message}
+                  </p>
+                )}
+
+                <Button
+                  type="submit"
+                  disabled={loading}
+                  className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-2"
+                >
+                  {loading ? 'Sending...' : 'SEND A MESSAGE'}
                 </Button>
               </form>
             </div>
@@ -187,7 +225,7 @@ const Contact = () => {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="h-96 w-full">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8174449559437!2d36.82496131475397!3d-1.2829084990626947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d22c4e4a31%3A0x8a5e6b8e8b8b8b8b!2sTom%20Mboya%20St%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1635494400000!5m2!1sen!2ske"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3988.8197882947998!2d36.8139201!3d-1.2818911!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d253a461ab%3A0xf1a32b0dbcf6c646!2sAnniversary%20Towers!5e0!3m2!1sen!2ske!4v1755381332317!5m2!1sen!2ske"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -209,7 +247,6 @@ const Contact = () => {
             </div>
           </div>
 
-          
         </div>
       </section>
 
