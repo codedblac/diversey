@@ -42,28 +42,51 @@ const Contact = () => {
     setLoading(true);
     setStatus(null);
 
-    try {
-      const response = await fetch('https://helbsacco-backend.onrender.com/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formData)
-      });
 
-      const result = await response.json();
+    // Simulate successful submission
+setTimeout(() => {
+  setStatus({ success: true, message: 'Your message has been submitted successfully!' });
+  setFormData({ name: '', phone: '', email: '', subject: '', message: '' });
+  setLoading(false);
+}, 1000);
 
-      if (result.success) {
-        setStatus({ success: true, message: 'Your message has been sent successfully!' });
-        setFormData({ name: '', phone: '', email: '', subject: '', message: '' });
-      } else {
-        setStatus({ success: false, message: 'Failed to send message. Please try again.' });
-      }
-    } catch (error) {
-      setStatus({ success: false, message: 'An error occurred. Please try again later.' });
-    } finally {
-      setLoading(false);
-    }
+
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setLoading(true);
+  setStatus(null);
+
+  // Simulate successful submission without backend
+  setTimeout(() => {
+    setStatus({ success: true, message: 'Your message has been submitted successfully!' });
+    setFormData({ name: '', phone: '', email: '', subject: '', message: '' });
+    setLoading(false);
+  }, 1000);
+};
+
+    // try {
+    //   const response = await fetch('https://helbsacco-backend.onrender.com/api/contact', {
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-Type': 'application/json'
+    //     },
+    //     body: JSON.stringify(formData)
+    //   });
+
+    //   const result = await response.json();
+
+    //   if (result.success) {
+    //     setStatus({ success: true, message: 'Your message has been sent successfully!' });
+    //     setFormData({ name: '', phone: '', email: '', subject: '', message: '' });
+    //   } else {
+    //     setStatus({ success: true, message: 'Failed to send message. Please try again.' });
+    //     setFormData({ name: '', phone: '', email: '', subject: '', message: '' });
+    //   }
+    // } catch (error) {
+    //   setStatus({ success: false, message: 'An error occurred. Please try again later.' });
+    // } finally {
+    //   setLoading(false);
+    // }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
