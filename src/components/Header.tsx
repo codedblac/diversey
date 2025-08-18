@@ -19,7 +19,9 @@ const Header = () => {
   const aboutUsItems = [
     { title: 'Who We Are', href: '/about' },
     // { title: 'Become a Member', href: '/membership' },
-    { title: 'Management Board Of Directors', href: '/leadership' },
+    { title: 'Board Of Directors', href: '/leadership' },
+    { title: 'Supervisory Committee', href: '/supervisory' },
+    { title: 'Management Team', href: '/management' },
   ];
 
   // ✅ Keep: Products dropdown

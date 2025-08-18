@@ -23,7 +23,9 @@ import MemberPortal from "./pages/MemberPortal";
 import StaffPortal from "./pages/StaffPortal";
 import ServicePortal from "./pages/ServicePortal";
 import Faqs from './pages/Faqs';
-import Login from './pages/Login'
+import Login from './pages/Login';
+import Supervisory from './pages/Supervisory';
+import Management from './pages/Management';
 
 const queryClient = new QueryClient();
 
@@ -53,6 +55,12 @@ const App = () => (
           <Route path="/faqs" element={<Faqs />} />
           <Route path="/login" element={<Login />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/supervisory" element={<Supervisory />} />
+          <Route path="/management" element={<Management />} />
+
+          {/* Add any additional routes here */}
+          
+          {/* Catch-all route for 404 Not Found */}
 
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
