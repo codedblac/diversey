@@ -172,22 +172,22 @@ const LoanProducts = () => {
     "Advance is available only between January and the AGM date.",
     "A 5% commission/processing fee is charged and deducted from the final balance."
   ]
-},
-{
-  id: 12,
-  title: "Mdosi Junior Savings Account",
-  description: "Designed for children under 18, this savings account allows parents to save on behalf of their children and teach them the value of financial planning early.",
-  image: "https://images.pexels.com/photos/618158/pexels-photo-618158.jpeg?auto=compress&cs=tinysrgb&w=800",
-  details: [
-    "Account is in the child’s name; operated by the parent.",
-    "Child’s birth certificate required for account opening.",
-    "Opening and minimum operating balance: Kshs 1,000.",
-    "Minimum monthly contribution: Kshs 1,000.",
-    "Interest: 10% p.a. on deposits above Kshs 5,000.",
-    "Withdrawals limited to four times a year.",
-    "At age 18, account can be converted to normal SACCO membership."
-  ]
 }
+// {
+//   id: 12,
+//   title: "Mdosi Junior Savings Account",
+//   description: "Designed for children under 18, this savings account allows parents to save on behalf of their children and teach them the value of financial planning early.",
+//   image: "https://images.pexels.com/photos/618158/pexels-photo-618158.jpeg?auto=compress&cs=tinysrgb&w=800",
+//   details: [
+//     "Account is in the child’s name; operated by the parent.",
+//     "Child’s birth certificate required for account opening.",
+//     "Opening and minimum operating balance: Kshs 1,000.",
+//     "Minimum monthly contribution: Kshs 1,000.",
+//     "Interest: 10% p.a. on deposits above Kshs 5,000.",
+//     "Withdrawals limited to four times a year.",
+//     "At age 18, account can be converted to normal SACCO membership."
+//   ]
+// }
 
 
 

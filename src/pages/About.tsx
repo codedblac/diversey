@@ -94,7 +94,7 @@ const About = () => {
               {
                 icon: Award,
                 title: "Licensed & Regulated",
-                description: "Fully licensed deposit-taking SACCO"
+                description: "Fully licensed Non Withdrawable deposit-taking SACCO"
               },
               {
                 icon: TrendingUp,

@@ -11,7 +11,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-helb-gold-400">About Us</h3>
             <p className="text-sm text-gray-300 mb-4">
-              HELB REGULATED Non-WDT Sacco Society Limited is a licensed deposit taking (DT) SACCO that was formed to serve
+              HELB REGULATED Non-WDT Sacco Society Limited is a licensed Non Withdrawable deposit taking (NWDT) SACCO that was formed to serve
               the financial needs of HELB employees and their families. We provide affordable financial
               services to help our members achieve their financial goals.
             </p>
