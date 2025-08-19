@@ -36,14 +36,14 @@ const Index = () => {
       description: "Flexible savings accounts with competitive interest rates to help you build wealth.",
       image: "img/helb2.jpg",
       link: "/savings",
-      features: ["Mdosi Junior Savings Account ", "Withdrawable Savings", "Share capital Savings ", "Deposits "]
+      features: ["Share capital Savings ","Deposits ","Withdrawable Savings ","Mdosi Junior Savings Account "]
     },
     {
       title: "Loan Products",
       description: "Affordable loans with flexible repayment terms for all your financial needs.",
       image: "img/helb3.jpg",
       link: "/loans",
-      features: ["Development Loans", "Emergency Loans", "Education loan", "Utility loan"]
+      features: ["Super Development Loan", "Premium Development Loan", "Golden Development Loan", "Normal Repayment Loan"]
     },
     
   ];
