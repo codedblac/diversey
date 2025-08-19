@@ -81,7 +81,7 @@ const Header = () => {
       <div className="bg-helb-green-800 text-white py-2 px-4">
         <div className="container mx-auto flex justify-between items-center text-sm">
           <div className="flex items-center space-x-6">
-            <span>📧 info@memberservices.co.ke</span>
+            <span>📧 memberservices.co.ke</span>
             <span>📞 +254 711052499/799</span>
           </div>
           <div className="hidden md:flex items-center space-x-4">

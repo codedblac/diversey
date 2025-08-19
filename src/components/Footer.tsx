@@ -43,7 +43,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-helb-gold-400">Contact</h3>
             <div className="space-y-2 text-sm text-gray-300 mb-4">
-              <p>📧 info@memberservices.co.ke</p>
+              <p>📧 memberservices.co.ke</p>
               <p>📞 Tel +254 711052499/799</p>
               <div className="mt-2">
                 <p className="font-medium">HELB REGULATED Non-WDT SACCO SOCIETY</p>

@@ -23,8 +23,34 @@ const SavingsProducts = () => {
   }, []);
 
   const savingsProducts = [
+
     {
       id: 1,
+      title: "Share Capital Savings",
+      description: "These are savings in the SACCO required by law for every member to have a specified minimum share capital. These cannot be withdrawn. Shares have to be sold to another member if a member exits the Sacco.",
+      image: "https://images.pexels.com/photos/5905716/pexels-photo-5905716.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+
+    {
+      id: 2,
+      title: "Deposits",
+      description: "These are normal Sacco savings on which award of loans are based, which currently for HELB Sacco is three (4) the savings. These are the savings on which the interest on deposits (normally known as dividends) are paid",
+      image: "img/deposit.jpg"    },
+
+      {
+      id: 3,
+      title: "Withdrawable Savings",
+      description: "These are voluntary savings a member can save with the SACCO for general purposes or specified purposes and is allowed to withdraw on notice.",
+      image: "img/savings.jpg",
+      details: [
+        "The savings can done for investment, fees, holiday, birthdays, wedding, anniversaries, Children/Minor (below 18years) etc.",
+        "All savings will receive an interest return at the same rate as that of Return on deposits (normally known as dividends) declared and approved during AGM."
+      ]
+    },
+
+
+    {
+      id: 4,
       title: "Mdosi Junior Savings Account",
       description: "The objective of Mdosi Junior savings account is to provide a facility for parents to save for their children and is open to all kids below 18years.",
       image: "img/juniour.webp",
@@ -37,28 +63,13 @@ const SavingsProducts = () => {
         "Withdrawal will be capped at four times a year",
         "On attainment of 18 years the account can be converted to normal, share capital, deposits and withdrawable savings for the child to become a bonafide SACCO member."
       ]
-    },
-    {
-      id: 2,
-      title: "Share Capital Savings",
-      description: "These are savings in the SACCO required by law for every member to have a specified minimum share capital. These cannot be withdrawn. Shares have to be sold to another member if a member exits the Sacco.",
-      image: "https://images.pexels.com/photos/5905716/pexels-photo-5905716.jpeg?auto=compress&cs=tinysrgb&w=800"
-    },
-    {
-      id: 3,
-      title: "Deposits",
-      description: "These are normal Sacco savings on which award of loans are based, which currently for HELB Sacco is three (4) the savings. These are the savings on which the interest on deposits (normally known as dividends) are paid",
-      image: "img/deposit.jpg"    },
-    {
-      id: 4,
-      title: "Withdrawable Savings",
-      description: "These are voluntary savings a member can save with the SACCO for general purposes or specified purposes and is allowed to withdraw on notice.",
-      image: "img/savings.jpg",
-      details: [
-        "The savings can done for investment, fees, holiday, birthdays, wedding, anniversaries, Children/Minor (below 18years) etc.",
-        "All savings will receive an interest return at the same rate as that of Return on deposits (normally known as dividends) declared and approved during AGM."
-      ]
     }
+
+
+
+    
+
+
   ];
 
   const savingsFeatures = [
@@ -85,7 +96,7 @@ const SavingsProducts = () => {
       {/* Main Content */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          {/* Header */}
+          {/* Header
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
             <div className="animate-on-scroll">
               <img 
@@ -116,7 +127,7 @@ const SavingsProducts = () => {
                 </ul>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Savings Products */}
           <div className="space-y-12">

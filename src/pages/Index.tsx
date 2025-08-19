@@ -410,7 +410,7 @@ const Index = () => {
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Write us</h3>
                     <p className="mb-1 text-gray-200">Email us at:</p>
-                    <p className="text-lg">info@memberservices.co.ke</p>
+                    <p className="text-lg">memberservices.co.ke</p>
                     {/* <p className="text-lg">customercare@helbsacco.com</p>
                     <p className="text-lg">publicrelations@helbsacco.com</p> */}
                   </div>

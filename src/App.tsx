@@ -1,5 +1,6 @@
 
 import { Toaster } from "@/components/ui/toaster";
+import ScrollToTop from './components/ScrollToTop';
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -35,6 +36,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+      <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
@@ -53,7 +55,6 @@ const App = () => (
           <Route path="/tender-publications" element={<TenderPublications />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/faqs" element={<Faqs />} />
-          <Route path="/login" element={<Login />} />
           <Route path="/login" element={<Login />} />
           <Route path="/supervisory" element={<Supervisory />} />
           <Route path="/management" element={<Management />} />
