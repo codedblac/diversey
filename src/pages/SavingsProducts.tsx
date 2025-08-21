@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import SEO from "@/components/SEO";
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Link } from 'react-router-dom';
@@ -82,6 +83,14 @@ const SavingsProducts = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      
+<SEO
+  title="Savings Products - HELBSacco"
+  description="Discover HELBSacco’s flexible savings products tailored to help you grow your wealth. Secure options, competitive interest rates, and member-first services."
+  keywords="helb sacco savings, sacco savings products, savings accounts, helbsacco kenya, junior savings, withdrawable savings, deposits"
+  url="https://helbsacco.co.ke/savings"
+  image="https://helbsacco.co.ke/logo.png"
+/>
       <Header />
       
       {/* Hero Section */}

@@ -1,8 +1,9 @@
-import { useEffect } from 'react';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import { Card, CardContent } from '@/components/ui/card';
-import { FileText, Download } from 'lucide-react';
+import { useEffect } from "react";
+import SEO from "@/components/SEO";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import { Card, CardContent } from "@/components/ui/card";
+import { FileText, Download } from "lucide-react";
 
 const Resources = () => {
   useEffect(() => {
@@ -10,14 +11,14 @@ const Resources = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('in-view');
+            entry.target.classList.add("in-view");
           }
         });
       },
       { threshold: 0.1 }
     );
 
-    const elements = document.querySelectorAll('.animate-on-scroll');
+    const elements = document.querySelectorAll(".animate-on-scroll");
     elements.forEach((el) => observer.observe(el));
 
     return () => observer.disconnect();
@@ -29,14 +30,14 @@ const Resources = () => {
       description: "Complete form for new membership registration",
       type: "PDF",
       icon: <FileText className="w-6 h-6" />,
-      file: "/downloads/MEMBERSHIP-APPLICATION-FORM.pdf" // 👈 Actual path in public folder
+      file: "/downloads/MEMBERSHIP-APPLICATION-FORM.pdf", // 👈 Actual path in public folder
     },
     {
       title: "Nominee Forms",
       description: "Form to nominate a beneficiary",
       type: "PDF",
       icon: <FileText className="w-6 h-6" />,
-      file: "/downloads/Nominee_Form.pdf" // 👈 Actual path in public folder
+      file: "/downloads/Nominee_Form.pdf", // 👈 Actual path in public folder
     },
   ];
 
@@ -47,11 +48,18 @@ const Resources = () => {
     "Low interest rates on loans",
     "Competitive annual dividends and interest on deposits",
     "Deposit insurance",
-    "Affordable property with HELB investment"
+    "Affordable property with HELB investment",
   ];
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEO
+        title="Resources - HELBSacco"
+        description="Access helpful resources from HELBSacco including downloadable forms, policy documents, guides, and financial education materials."
+        keywords="helbsacco resources, sacco forms, helb sacco documents, sacco guides, financial education, helbsacco downloads"
+        url="https://helbsacco.co.ke/resources"
+        image="https://helbsacco.co.ke/logo.png"
+      />
       <Header />
 
       {/* Hero Section */}
@@ -69,8 +77,8 @@ const Resources = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
             {/* Image */}
             <div className="animate-on-scroll">
-              <img 
-                src="img/resources.jpg" 
+              <img
+                src="img/resources.jpg"
                 alt="HELB Sacco Resources"
                 className="rounded-lg shadow-lg w-full h-96 object-cover"
               />
@@ -112,10 +120,16 @@ const Resources = () => {
                           {resource.icon}
                         </div>
                         <div className="flex-1">
-                          <h3 className="font-semibold text-lg mb-2">{resource.title}</h3>
-                          <p className="text-gray-600 text-sm mb-3">{resource.description}</p>
+                          <h3 className="font-semibold text-lg mb-2">
+                            {resource.title}
+                          </h3>
+                          <p className="text-gray-600 text-sm mb-3">
+                            {resource.description}
+                          </p>
                           <div className="flex items-center justify-between">
-                            <span className="text-xs bg-gray-100 px-2 py-1 rounded">{resource.type}</span>
+                            <span className="text-xs bg-gray-100 px-2 py-1 rounded">
+                              {resource.type}
+                            </span>
                             <Download className="w-4 h-4 text-helb-green-600" />
                           </div>
                         </div>

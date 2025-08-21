@@ -1,5 +1,6 @@
 
 import Header from '@/components/Header';
+import SEO from "@/components/SEO";
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -57,6 +58,13 @@ const navigate = useNavigate();
 
   return (
     <div className="min-h-screen">
+      <SEO
+  title="Become a Member - HELBSacco"
+  description="Join HELBSacco today and enjoy personalized financial solutions, competitive returns, secure savings, and exclusive member benefits."
+  keywords="join HELBSacco, sacco membership, helb sacco registration, become a member, sacco kenya membership, helbsacco benefits"
+  url="https://helbsacco.co.ke/membership"
+  image="https://helbsacco.co.ke/logo.png"
+/>
       <Header />
       
       {/* Hero Section */}

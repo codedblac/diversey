@@ -1,37 +1,41 @@
-import { useEffect, useState } from 'react';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { useEffect, useState } from "react";
+import SEO from "@/components/SEO";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    subject: '',
-    message: ''
+    name: "",
+    phone: "",
+    email: "",
+    subject: "",
+    message: "",
   });
 
   const [loading, setLoading] = useState(false);
-  const [status, setStatus] = useState<{ success: boolean; message: string } | null>(null);
+  const [status, setStatus] = useState<{
+    success: boolean;
+    message: string;
+  } | null>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('in-view');
+            entry.target.classList.add("in-view");
           }
         });
       },
       { threshold: 0.1 }
     );
 
-    const elements = document.querySelectorAll('.animate-on-scroll');
+    const elements = document.querySelectorAll(".animate-on-scroll");
     elements.forEach((el) => observer.observe(el));
 
     return () => observer.disconnect();
@@ -42,27 +46,37 @@ const Contact = () => {
     setLoading(true);
     setStatus(null);
 
-
     // Simulate successful submission
-setTimeout(() => {
-  setStatus({ success: true, message: 'Your message has been submitted successfully!' });
-  setFormData({ name: '', phone: '', email: '', subject: '', message: '' });
-  setLoading(false);
-}, 1000);
+    setTimeout(() => {
+      setStatus({
+        success: true,
+        message: "Your message has been submitted successfully!",
+      });
+      setFormData({ name: "", phone: "", email: "", subject: "", message: "" });
+      setLoading(false);
+    }, 1000);
 
+    const handleSubmit = async (e: React.FormEvent) => {
+      e.preventDefault();
+      setLoading(true);
+      setStatus(null);
 
-const handleSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
-  setLoading(true);
-  setStatus(null);
-
-  // Simulate successful submission without backend
-  setTimeout(() => {
-    setStatus({ success: true, message: 'Your message has been submitted successfully!' });
-    setFormData({ name: '', phone: '', email: '', subject: '', message: '' });
-    setLoading(false);
-  }, 1000);
-};
+      // Simulate successful submission without backend
+      setTimeout(() => {
+        setStatus({
+          success: true,
+          message: "Your message has been submitted successfully!",
+        });
+        setFormData({
+          name: "",
+          phone: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
+        setLoading(false);
+      }, 1000);
+    };
 
     // try {
     //   const response = await fetch('https://helbsacco-backend.onrender.com/api/contact', {
@@ -89,17 +103,26 @@ const handleSubmit = async (e: React.FormEvent) => {
     // }
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEO
+        title="Contact HELBSacco"
+        description="Get in touch with HELBSacco for inquiries, support, or membership details. We're here to help you with your financial needs."
+        keywords="contact HELBSacco, helb sacco contact, sacco support, helb customer care, helbsacco email, helbsacco phone"
+        url="https://helbsacco.co.ke/contact"
+        image="https://helbsacco.co.ke/logo.png"
+      />
       <Header />
-      
+
       {/* Hero Section */}
       <section className="bg-helb-green-700 text-white py-16">
         <div className="container mx-auto px-4">
@@ -130,9 +153,9 @@ const handleSubmit = async (e: React.FormEvent) => {
                 </div>
                 <h3 className="font-semibold text-lg mb-2">Address</h3>
                 <p className="text-gray-600 text-sm">
-                  HELB REGULATED Non-WDT SACCO SOCIETY LTD P.O. Box 69489 - 0400,
-                  NAIROBI, ANNIVERSARY TOWERS, 3RD FLOOR, TOM MBOYA STREET,
-                  NAIROBI CITY
+                  HELB REGULATED Non-WDT SACCO SOCIETY LTD P.O. Box 69489 -
+                  0400, NAIROBI, ANNIVERSARY TOWERS, 3RD FLOOR, TOM MBOYA
+                  STREET, NAIROBI CITY
                 </p>
               </CardContent>
             </Card>
@@ -156,18 +179,32 @@ const handleSubmit = async (e: React.FormEvent) => {
               </h2>
               <div className="space-y-4 mb-8">
                 <div>
-                  <h3 className="font-semibold text-helb-green-600 mb-2">Call us</h3>
-                  <p className="text-gray-600 mb-1">Business hours, 5 days a week.</p>
+                  <h3 className="font-semibold text-helb-green-600 mb-2">
+                    Call us
+                  </h3>
+                  <p className="text-gray-600 mb-1">
+                    Business hours, 5 days a week.
+                  </p>
                   <p className="text-gray-600">Phone: +254 711052499/799</p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-helb-green-600 mb-2">Write us</h3>
-                  <p className="text-gray-600 mb-1">Email: info@helbsacco.co.ke</p>
-                  <p className="text-gray-600">memberservices@helbsacco.co.ke</p>
+                  <h3 className="font-semibold text-helb-green-600 mb-2">
+                    Write us
+                  </h3>
+                  <p className="text-gray-600 mb-1">
+                    Email: info@helbsacco.co.ke
+                  </p>
+                  <p className="text-gray-600">
+                    memberservices@helbsacco.co.ke
+                  </p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-helb-green-600 mb-2">Visit us at:</h3>
-                  <p className="text-gray-600">Customer Care, HELB Centre, Tom Mboya St, Nairobi</p>
+                  <h3 className="font-semibold text-helb-green-600 mb-2">
+                    Visit us at:
+                  </h3>
+                  <p className="text-gray-600">
+                    Customer Care, HELB Centre, Tom Mboya St, Nairobi
+                  </p>
                 </div>
               </div>
             </div>
@@ -222,7 +259,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                 {status && (
                   <p
                     className={`text-sm ${
-                      status.success ? 'text-green-600' : 'text-red-600'
+                      status.success ? "text-green-600" : "text-red-600"
                     }`}
                   >
                     {status.message}
@@ -234,7 +271,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                   disabled={loading}
                   className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-2"
                 >
-                  {loading ? 'Sending...' : 'SEND A MESSAGE'}
+                  {loading ? "Sending..." : "SEND A MESSAGE"}
                 </Button>
               </form>
             </div>
@@ -263,13 +300,14 @@ const handleSubmit = async (e: React.FormEvent) => {
                   <MapPin className="w-6 h-6 text-helb-gold-400" />
                   <div>
                     <h3 className="font-semibold">HELB Centre</h3>
-                    <p className="text-sm opacity-90">Tom Mboya Street, Nairobi City</p>
+                    <p className="text-sm opacity-90">
+                      Tom Mboya Street, Nairobi City
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
       </section>
 

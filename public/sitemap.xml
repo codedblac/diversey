@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://helbsacco.co.ke/</loc>
+    <priority>1.00</priority>
+    <changefreq>daily</changefreq>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://helbsacco.co.ke/about</loc>
+    <priority>0.80</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://helbsacco.co.ke/contact</loc>
+    <priority>0.80</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Members Portal -->
+  <url>
+    <loc>https://helbsacco.co.ke/portals</loc>
+    <priority>0.70</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+</urlset>

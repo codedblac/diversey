@@ -1,5 +1,6 @@
 
 import Header from '@/components/Header';
+import SEO from "@/components/SEO";
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Users, Target, Award,  Star, TrendingUp } from 'lucide-react';
@@ -7,6 +8,13 @@ import { Users, Target, Award,  Star, TrendingUp } from 'lucide-react';
 const About = () => {
   return (
     <div className="min-h-screen">
+      <SEO
+      title="About HELBSacco"
+      description="Learn more about HELBSacco, our mission, vision, leadership, and commitment to empowering our members with reliable financial solutions."
+      keywords="about HELBSacco, sacco in Kenya, financial solutions, mission, vision, leadership"
+      url="https://helbsacco.co.ke/about"
+      image="https://helbsacco.co.ke/logo.png"
+    />
       <Header />
       
       {/* Hero Section */}

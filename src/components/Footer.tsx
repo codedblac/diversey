@@ -170,9 +170,19 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-helb-green-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-gray-300">
-            © {new Date().getFullYear()} Copyrights by HELB REGULATED Non-WDT
-            Sacco Society Limited. All Rights Reserved
-          </p>
+  © {new Date().getFullYear()} Copyrights by HELB REGULATED Non-WDT
+  Sacco Society Limited. All Rights Reserved <br /> <br />
+  Designed by{" "}
+  <a
+    href="https://technopickltd.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-400 hover:underline"
+  >
+    Technopick Reliable Solutions LTD
+  </a>
+</p>
+
 
           {/* Social Media Links */}
           <div className="flex space-x-4 mt-4 md:mt-0">

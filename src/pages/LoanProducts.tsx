@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import SEO from "@/components/SEO";
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Link } from 'react-router-dom';
@@ -208,6 +209,13 @@ const LoanProducts = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEO
+  title="Loan Products - HELBSacco"
+  description="Explore HELBSacco’s wide range of loan products designed to support your financial goals. Flexible terms, affordable rates, and member-focused solutions."
+  keywords="helb sacco loans, sacco loan products, personal loans, business loans, helbsacco kenya loans, development loans"
+  url="https://helbsacco.co.ke/loans"
+  image="https://helbsacco.co.ke/logo.png"
+/>
       <Header />
       
       {/* Hero Section */}

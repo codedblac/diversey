@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
@@ -218,6 +219,13 @@ She is passionate and a strong advocate in financial transferency and accountabi
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEO
+  title="Leadership & Governance - HELBSacco"
+  description="Meet the leadership and governance team behind HELBSacco. Experienced professionals committed to transparency, accountability, and strategic growth."
+  keywords="helbsacco leadership, sacco board of directors, governance, sacco management, helb sacco kenya leaders, supervisory committee"
+  url="https://helbsacco.co.ke/leadership"
+  image="https://helbsacco.co.ke/logo.png"
+/>
       <Header />
 
       {/* Hero */}
