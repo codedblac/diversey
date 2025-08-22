@@ -35,7 +35,7 @@ const SavingsProducts = () => {
     {
       id: 2,
       title: "Deposits",
-      description: "These are normal Sacco savings on which award of loans are based, which currently for HELB Sacco is three (4) the savings. These are the savings on which the interest on deposits (normally known as dividends) are paid",
+      description: "These are normal Sacco savings on which award of loans are based, which currently for HELB Sacco is currently a maximum of 4 times member’s savings. These are the savings on which the interest on deposits (normally known as dividends) are paid",
       image: "img/deposit.jpg"    },
 
       {
@@ -227,7 +227,7 @@ const SavingsProducts = () => {
           {/* Advisory and Training Services */}
 <div className="animate-on-scroll bg-white rounded-lg shadow-md p-8 mt-12 border-l-4 border-helb-green-600">
   <h2 className="text-2xl font-bold text-helb-green-700 mb-6">
-    Additional Member Services
+    Other Member Services
   </h2>
 
   <div className="mb-6">

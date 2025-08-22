@@ -27,6 +27,8 @@ import {
   Zap,
   Globe,
   Lock,
+  Lightbulb,
+  Smile,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -115,12 +117,12 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <SEO
-      title="HELBSacco - Home"
-      description="Welcome to HELBSacco, your trusted partner in financial solutions."
-      keywords="sacco, helb, loans, savings, kenya"
-      url="https://helbsacco.co.ke/"
-      image="https://helbsacco.co.ke/logo.png"
-    />
+        title="HELBSacco - Home"
+        description="Welcome to HELBSacco, your trusted partner in financial solutions."
+        keywords="sacco, helb, loans, savings, kenya"
+        url="https://helbsacco.co.ke/"
+        image="https://helbsacco.co.ke/logo.png"
+      />
       <Header />
 
       {/* Hero Section */}
@@ -147,8 +149,8 @@ const Index = () => {
                 Vision
               </h3>
               <p className="leading-relaxed text-lg">
-                To be the preferred financial solutions provider for the
-                members.
+                To be the preferred financial solutions and benefits provider
+                for the stake holders
               </p>
             </div>
 
@@ -158,8 +160,10 @@ const Index = () => {
                 Mission
               </h3>
               <p className="leading-relaxed text-lg">
-                Socio-economic empowerment of members through mobilization and
-                provision of superior financial products and services.
+                Socio-economic empowerment of members through mobilization of
+                savings and provision of superior financial products and
+                services by use of appropriate technology while adhering to
+                cooperative principles
               </p>
             </div>
           </div>
@@ -183,34 +187,28 @@ const Index = () => {
               <div className="grid gap-4">
                 {[
                   {
+                    icon: Smile,
+                    title: "Courtesy",
+                    description:
+                      "We treat everyone with respect, kindness, and a commitment to excellent service.",
+                  },
+                  {
                     icon: Shield,
                     title: "Integrity",
                     description:
-                      "We uphold honesty and transparency in all dealings.",
-                  },
-                  {
-                    icon: CheckCircle,
-                    title: "Accountability",
-                    description:
-                      "We take responsibility for our actions and services.",
-                  },
-                  {
-                    icon: Eye,
-                    title: "Transparency",
-                    description:
-                      "We operate in an open and clear manner to build trust.",
-                  },
-                  {
-                    icon: ThumbsUp,
-                    title: "Reliability",
-                    description:
-                      "You can depend on us to deliver consistent value.",
+                      "We act with honesty, uphold strong moral principles, and always do what’s right.",
                   },
                   {
                     icon: Users,
                     title: "Professionalism",
                     description:
-                      "We maintain high standards and ethics in everything we do.",
+                      "We deliver with competence, reliability, and a strong sense of responsibility.",
+                  },
+                  {
+                    icon: Lightbulb,
+                    title: "Innovation",
+                    description:
+                      "We embrace creativity and forward thinking to continuously improve and evolve.",
                   },
                 ].map((value, index) => (
                   <div

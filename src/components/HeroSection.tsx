@@ -15,7 +15,7 @@ const HeroSection = () => {
       description: "Empowering HELB employees and their families with affordable financial services and innovative solutions for a better tomorrow.",
       buttonText: "JOIN TODAY",
       buttonLink: "/membership",
-      features: ["20+ Years of Excellence", "500+ Active Members", "Nationwide Presence"]
+      features: ["20+ Years of Excellence", "300+ Active Members", "Nationwide Presence"]
     },
     {
       image: "img/loan.jpg",
