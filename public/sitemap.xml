@@ -15,6 +15,34 @@
     <changefreq>weekly</changefreq>
   </url>
 
+  <!-- Products Page -->
+  <url>
+    <loc>https://helbsacco.co.ke/products</loc>
+    <priority>0.80</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Membership Page -->
+  <url>
+    <loc>https://helbsacco.co.ke/membership</loc>
+    <priority>0.75</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Downloads Page -->
+  <url>
+    <loc>https://helbsacco.co.ke/downloads</loc>
+    <priority>0.70</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- FAQs Page -->
+  <url>
+    <loc>https://helbsacco.co.ke/faqs</loc>
+    <priority>0.70</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
   <!-- Contact Page -->
   <url>
     <loc>https://helbsacco.co.ke/contact</loc>
@@ -22,11 +50,32 @@
     <changefreq>weekly</changefreq>
   </url>
 
-  <!-- Members Portal -->
+  <!-- Leadership Page -->
   <url>
-    <loc>https://helbsacco.co.ke/portals</loc>
+    <loc>https://helbsacco.co.ke/leadership</loc>
     <priority>0.70</priority>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Loans Page -->
+  <url>
+    <loc>https://helbsacco.co.ke/loans</loc>
+    <priority>0.75</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Savings Page -->
+  <url>
+    <loc>https://helbsacco.co.ke/savings</loc>
+    <priority>0.75</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Member Login (Subdomain) -->
+  <url>
+    <loc>https://members.helbsacco.co.ke/site/login</loc>
+    <priority>0.50</priority>
+    <changefreq>monthly</changefreq>
   </url>
 
 </urlset>
