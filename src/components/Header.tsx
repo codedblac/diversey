@@ -85,7 +85,7 @@ const Header = () => {
             <span>📞 +254 711052499/799</span>
           </div>
           <div className="hidden md:flex items-center space-x-4">
-            <span>HELB REGULATED NON-WDT SACCO SOCIETY LTD P.O. Box 69489 - 0400, NAIROBI</span>
+            <span>HELB REGULATED NON-WDT SACCO SOCIETY LTD P.O. Box 69489 - 00400, NAIROBI</span>
           </div>
         </div>
       </div>

@@ -114,7 +114,7 @@ const Footer = () => {
                 <p className="font-medium">
                   HELB REGULATED Non-WDT SACCO SOCIETY
                 </p>
-                <p>LTD P.O. Box 69489 - 0400,</p>
+                <p>LTD P.O. Box 69489 - 00400,</p>
                 <p>NAIROBI, KENYA</p>
               </div>
             </div>

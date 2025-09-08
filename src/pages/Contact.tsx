@@ -154,7 +154,7 @@ const Contact = () => {
                 <h3 className="font-semibold text-lg mb-2">Address</h3>
                 <p className="text-gray-600 text-sm">
                   HELB REGULATED Non-WDT SACCO SOCIETY LTD P.O. Box 69489 -
-                  0400, NAIROBI, ANNIVERSARY TOWERS, 3RD FLOOR, NAIROBI CITY
+                  00400, NAIROBI, ANNIVERSARY TOWERS, 3RD FLOOR, NAIROBI CITY
                 </p>
               </CardContent>
             </Card>
