@@ -29,7 +29,7 @@ const SavingsProducts = () => {
       id: 1,
       title: "Share Capital Savings",
       description: "These are savings in the SACCO required by law for every member to have a specified minimum share capital. These cannot be withdrawn. Shares have to be sold to another member if a member exits the Sacco.",
-      image: "https://images.pexels.com/photos/5905716/pexels-photo-5905716.jpeg?auto=compress&cs=tinysrgb&w=800"
+      image: "/img/share-capital.webp",
     },
 
     {

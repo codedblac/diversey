@@ -238,36 +238,46 @@ She is passionate and a strong advocate in financial transferency and accountabi
       </section>
 
       {/* Content */}
-      <section className="py-16 container mx-auto px-4 space-y-16">
+      <section className="py-16 mx-auto max-w-screen-xl space-y-16">
+
         {/* Board */}
-        <div>
+        {/* <div>
           <h2 className="text-3xl font-bold text-helb-green-700 mb-8 text-center">
             Management Board of Directors
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {boardMembers.map(renderMemberCard)}
           </div>
-        </div>
-
-        {/* Supervisory */}
-        {/* <div>
-          <h2 className="text-3xl font-bold text-helb-green-700 mb-8 text-center">
-            Supervisory Board Directors
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {supervisoryCommittee.map(renderMemberCard)}
-          </div>
         </div> */}
 
-        {/* Management */}
-        {/* <div>
-          <h2 className="text-3xl font-bold text-helb-green-700 mb-8 text-center">
-            Management
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {management.map(renderMemberCard)}
-          </div>
-        </div> */}
+      <div className="flex flex-col items-center gap-12">
+  {/* Row 1: 1 member */}
+  <div className="flex justify-center gap-6 w-full max-w-4xl mx-auto">
+    <div className="w-[280px]">{renderMemberCard(boardMembers[0])}</div>
+  </div>
+
+  {/* Row 2: 3 members */}
+  <div className="flex justify-center gap-6 flex-wrap w-full max-w-5xl mx-auto">
+    {boardMembers.slice(1, 4).map((member) => (
+      <div key={member.name} className="w-[280px]">
+        {renderMemberCard(member)}
+      </div>
+    ))}
+  </div>
+
+  {/* Row 3: 4 members */}
+  <div className="flex justify-center gap-6 flex-wrap w-full max-w-7xl mx-auto">
+    {boardMembers.slice(4, 8).map((member) => (
+      <div key={member.name} className="w-[280px]">
+        {renderMemberCard(member)}
+      </div>
+    ))}
+  </div>
+</div>
+
+
+
+        
       </section>
 
       <Footer />

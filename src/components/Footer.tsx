@@ -42,22 +42,22 @@ const Footer = () => {
                   Savings Products
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   to="/other-services"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   Other Products & Services
                 </Link>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <Link
                   to="/helb-investment"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   HELB Investment
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -91,14 +91,14 @@ const Footer = () => {
                   Leadership & Governance
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   to="/departments"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   Departments
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 

@@ -232,35 +232,36 @@ She is passionate and a strong advocate in financial transferency and accountabi
       {/* Content */}
       <section className="py-16 container mx-auto px-4 space-y-16">
 
-        {/* Board */}
-        {/* <div>
-          <h2 className="text-3xl font-bold text-helb-green-700 mb-8 text-center">
-            Management Board of Directors
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {boardMembers.map(renderMemberCard)}
-          </div>
-        </div> */}
-
-        {/* Supervisory
-        <div>
-          <h2 className="text-3xl font-bold text-helb-green-700 mb-8 text-center">
-            Supervisory Board Directors
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {supervisoryCommittee.map(renderMemberCard)}
-          </div>
-        </div> */}
-
+        
         {/* Management */}
-        <div>
+        {/* <div>
           <h2 className="text-3xl font-bold text-helb-green-700 mb-8 text-center">
             Management
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {management.map(renderMemberCard)}
           </div>
-        </div>
+        </div> */}
+        {/* Management */}
+<div>
+  <h2 className="text-3xl font-bold text-helb-green-700 mb-8 text-center">
+    Management
+  </h2>
+
+  <div className="flex flex-col items-center gap-12 mt-8">
+    {/* Row 1: CEO */}
+    <div className="flex justify-center gap-6 w-full max-w-4xl">
+      {renderMemberCard(management[0])}
+    </div>
+
+    {/* Row 2: Other Management Members */}
+    <div className="flex justify-center gap-6 w-full max-w-4xl">
+      {renderMemberCard(management[1])}
+      {renderMemberCard(management[2])}
+    </div>
+  </div>
+</div>
+
       </section>
 
       <Footer />

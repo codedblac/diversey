@@ -39,7 +39,7 @@ const LoanProducts = () => {
     id: 2,
     title: "Premium Development Loan",
     description: "Repayment through Check off System only.",
-    image: "https://images.pexels.com/photos/3184394/pexels-photo-3184394.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/premium-development.webp",
     details: [
       "Repayment period of 72 months",
       "Interest rate 15%",
@@ -61,7 +61,7 @@ const LoanProducts = () => {
     id: 4,
     title: "Normal Repayment Loan",
     description: "This is our legacy development loan.",
-    image: "https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/money-repayment.webp",
     details: [
       "Repayment period of 48 months",
       "Interest rate of 12%",
@@ -78,7 +78,7 @@ const LoanProducts = () => {
     id: 5,
     title: "Emergency Loan",
     description: "This loan is granted to cater for unforeseen circumstances such as sudden hospitalization, funeral expenses, fire, theft and such similar hazards.",
-    image: "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/emergency.webp",
     details: [
       "Repayment period is 12 months",
       "Loan amount is based on ability to repay within 12 months",
@@ -100,7 +100,7 @@ const LoanProducts = () => {
     id: 7,
     title: "Utility Loan",
     description: "This is granted to members who require immediate financing at short term for household items like fridges, cookers, furniture and other household requirements.",
-    image: "https://images.pexels.com/photos/439391/pexels-photo-439391.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/utility.webp",
     details: [
       "Repayment period is 36 months",
       "Interest is 12% p.a",
@@ -121,7 +121,7 @@ const LoanProducts = () => {
     id: 9,
     title: "Instant/Salary Advance Loan",
     description: "Issued to members who require money urgently.",
-    image: "https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/instant.webp",
     details: [
       "Recovered in one installment at the end of the month of award",
       "Interest is 10% per month",
@@ -132,7 +132,7 @@ const LoanProducts = () => {
     id: 10,
     title: "Jipange Loan",
     description: "Granted to members who have short-term income like acting allowance, special duty, etc.",
-    image: "https://images.pexels.com/photos/5905710/pexels-photo-5905710.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/jipange.webp",
     details: [
       "Repayment period is 6 months",
       "Interest is 12% p.a",
@@ -143,7 +143,7 @@ const LoanProducts = () => {
     id: 11,
     title: "Maisha Bora Loan",
     description: "Helps members acquire products/services from partners with MOUs with HELB SACCO LTD.",
-    image: "https://images.pexels.com/photos/5905711/pexels-photo-5905711.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/maisha-bora.webp",
     details: [
       "No cash payments to members",
       "Payment is made directly to the supplier or service provider",
@@ -160,7 +160,7 @@ const LoanProducts = () => {
     id: 12,
     title: "Self-Guaranteed Loan",
     description: "For members whose total loans applied are less than or equal to their non-withdrawable deposits.",
-    image: "https://images.pexels.com/photos/5905712/pexels-photo-5905712.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/self-guaranteed.webp",
     details: [
       "Repayment period of 48 months",
       "Interest rate is 12% p.a",
@@ -173,7 +173,7 @@ const LoanProducts = () => {
     id: 13,
     title: "Senior (Retirees) Scheme/Products",
     description: "For retirees who were members before retirement, joining the senior members club to continue enjoying SACCO benefits.",
-    image: "https://images.pexels.com/photos/3184394/pexels-photo-3184394.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/img/seniour-retirees.webp",
     details: [
       "Rejoining members to pay Kshs 1,000",
       "Minimum monthly contribution is Ksh 1,000",

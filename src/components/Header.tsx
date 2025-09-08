@@ -118,7 +118,7 @@ const Header = () => {
               {/* Login Button (Desktop) */}
               <a href="https://members.helbsacco.co.ke/site/login">
               <Button className="bg-helb-green-600 hover:bg-helb-green-700 text-white">
-              Login
+              Member Login
               </Button>
               </a>
 
@@ -169,7 +169,7 @@ const Header = () => {
               onClick={() => window.location.href = 'https://members.helbsacco.co.ke/site/login'}
               className="block w-full bg-helb-green-600 hover:bg-helb-green-700 text-white py-2 px-4 rounded"
               >
-              Login
+                Member Login
               </button>
             </div>
           </div>

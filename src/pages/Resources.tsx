@@ -30,15 +30,22 @@ const Resources = () => {
       description: "Complete form for new membership registration",
       type: "PDF",
       icon: <FileText className="w-6 h-6" />,
-      file: "/downloads/MEMBERSHIP-APPLICATION-FORM.pdf", // 👈 Actual path in public folder
+      file: "/downloads/MEMBERSHIP-APPLICATION-FORM.pdf", 
     },
     {
       title: "Nominee Forms",
       description: "Form to nominate a beneficiary",
       type: "PDF",
       icon: <FileText className="w-6 h-6" />,
-      file: "/downloads/Nominee_Form.pdf", // 👈 Actual path in public folder
+      file: "/downloads/NOMINNEE-FORM.pdf", 
     },
+    {
+    title: "Service Charter",
+    description: "Outlines our service standards and commitments to members.",
+    type: "PDF",
+    icon: <FileText className="w-6 h-6" />,
+    file: "/downloads/service-charter.pdf", 
+  },
   ];
 
   const features = [
