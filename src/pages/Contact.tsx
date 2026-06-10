@@ -115,11 +115,11 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <SEO
-        title="Contact HELBSacco"
-        description="Get in touch with HELBSacco for inquiries, support, or membership details. We're here to help you with your financial needs."
-        keywords="contact HELBSacco, helb sacco contact, sacco support, helb customer care, helbsacco email, helbsacco phone"
-        url="https://helbsacco.co.ke/contact"
-        image="https://helbsacco.co.ke/logo.png"
+        title="Contact DIVERSEYSacco"
+        description="Get in touch with DIVERSEYSacco for inquiries, support, or membership details. We're here to help you with your financial needs."
+        keywords="contact DIVERSEYSacco, diversey sacco contact, sacco support, diversey customer care, diverseysacco email, diverseysacco phone"
+        url="https://diverseysacco.com/contact"
+        image="https://diverseysacco.com/logo.png"
       />
       <Header />
 
@@ -142,7 +142,7 @@ const Contact = () => {
                   <Mail className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="font-semibold text-lg mb-2">Email</h3>
-                <p className="text-gray-600">info@helbsacco.co.ke</p>
+                <p className="text-gray-600">info@diverseyacco.com</p>
               </CardContent>
             </Card>
 
@@ -153,7 +153,7 @@ const Contact = () => {
                 </div>
                 <h3 className="font-semibold text-lg mb-2">Address</h3>
                 <p className="text-gray-600 text-sm">
-                  HELB REGULATED Non-WDT SACCO SOCIETY LTD P.O. Box 69489 -
+                  DIVERSEY REGULATED Non-WDT SACCO SOCIETY LTD P.O. Box 69489 -
                   00400, NAIROBI, ANNIVERSARY TOWERS, 3RD FLOOR, NAIROBI CITY
                 </p>
               </CardContent>
@@ -191,10 +191,10 @@ const Contact = () => {
                     Write us
                   </h3>
                   <p className="text-gray-600 mb-1">
-                    Email: info@helbsacco.co.ke
+                    Email: info@diverseysacco.com
                   </p>
                   <p className="text-gray-600">
-                    memberservices@helbsacco.co.ke
+                    memberservices@diverseysacco.com
                   </p>
                 </div>
                 <div>
@@ -202,7 +202,7 @@ const Contact = () => {
                     Visit us at:
                   </h3>
                   <p className="text-gray-600">
-                    Customer Care, HELB Centre, Anniversary Towers, Nairobi
+                    Customer Care, DIVERSEY Centre, Anniversary Towers, Nairobi
                   </p>
                 </div>
               </div>
@@ -291,14 +291,14 @@ const Contact = () => {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="HELB Sacco Location"
+                  title="DIVERSEY Sacco Location"
                 ></iframe>
               </div>
               <div className="p-6 bg-helb-green-700 text-white">
                 <div className="flex items-center space-x-4">
                   <MapPin className="w-6 h-6 text-helb-gold-400" />
                   <div>
-                    <h3 className="font-semibold">HELB Centre</h3>
+                    <h3 className="font-semibold">DIVERSEY Centre</h3>
                     <p className="text-sm opacity-90">
                       Anniversary Towers, Nairobi City
                     </p>

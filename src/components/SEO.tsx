@@ -13,8 +13,8 @@ export default function SEO({
   title,
   description,
   keywords,
-  url = "https://helbsacco.co.ke",
-  image = "https://helbsacco.co.ke/logo.png",
+  url = "https://diverseysacco.com",
+  image = "https://diverseysacco.com/logo.png",
   canonical,
 }: SEOProps) {
   return (
@@ -22,7 +22,7 @@ export default function SEO({
       <title>{title}</title>
       <meta name="description" content={description} />
       {keywords && <meta name="keywords" content={keywords} />}
-      <meta name="author" content="HELBSacco" />
+      <meta name="author" content="diverseysacco" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
 
       {/* Canonical URL (only one) */}
@@ -34,7 +34,7 @@ export default function SEO({
       <meta property="og:url" content={url} />
       <meta property="og:image" content={image} />
       <meta property="og:type" content="website" />
-      <meta property="og:site_name" content="HELBSacco" />
+      <meta property="og:site_name" content="Diverseysacco" />
       <meta property="og:locale" content="en_KE" />
 
       {/* Twitter */}
@@ -48,12 +48,12 @@ export default function SEO({
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Organization",
-          name: "HELBSacco",
+          name: "DiverseySacco",
           url,
           logo: image,
           sameAs: [
-            "https://facebook.com/helbsacco",
-            "https://twitter.com/helbsacco",
+            "https://facebook.com/diverseysacco",
+            "https://twitter.com/diverseysacco",
           ],
         })}
       </script>
@@ -62,7 +62,7 @@ export default function SEO({
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "WebSite",
-          name: "HELBSacco",
+          name: "DIVERSEYSacco",
           url,
           potentialAction: {
             "@type": "SearchAction",

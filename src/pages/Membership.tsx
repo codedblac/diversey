@@ -28,7 +28,7 @@ const navigate = useNavigate();
   const groupRequirements = [
     "Complete and submit the Joint Membership Application Form",
     "Attach copy of Kenyan National Identity Card or a valid Kenyan Passport for all applicants (SHG) or Elected Officials in case of Chamas",
-    "General members resolution authorizing account opening in HELB SACCO",
+    "General members resolution authorizing account opening in DIVERSEY SACCO",
     "Attach colored passport size photographs for all applicants",
     "Attach a copy of the Group Registration Certificate",
     "Attach copies of KRA PIN Certificates for officials"
@@ -37,7 +37,7 @@ const navigate = useNavigate();
   const institutionalRequirements = [
     "Complete and submit the Company Membership Application Form",
     "Attach a certified copy of Registration Certificate",
-    "General meeting/board resolution authorizing account opening at HELB SACCO",
+    "General meeting/board resolution authorizing account opening at DIVERSEY SACCO",
     "Attach the memorandum and articles of association for the company",
     "Attach colored passport size photographs of authorized signatories and copies of their national ID/Passport",
     "Attach signature specimens of the signatories",
@@ -53,17 +53,17 @@ const navigate = useNavigate();
     "Low interest rates on loans",
     "Competitive annual dividends and interest on deposits",
     "Deposit insurance",
-    "Affordable property with HELB Investment"
+    "Affordable property with DIVERSEY Investment"
   ];
 
   return (
     <div className="min-h-screen">
       <SEO
-  title="Become a Member - HELBSacco"
-  description="Join HELBSacco today and enjoy personalized financial solutions, competitive returns, secure savings, and exclusive member benefits."
-  keywords="join HELBSacco, sacco membership, helb sacco registration, become a member, sacco kenya membership, helbsacco benefits"
-  url="https://helbsacco.co.ke/membership"
-  image="https://helbsacco.co.ke/logo.png"
+  title="Become a Member - DIVERSEYSacco"
+  description="Join DIVERSEYSacco today and enjoy personalized financial solutions, competitive returns, secure savings, and exclusive member benefits."
+  keywords="join DIVERSEYSacco, sacco membership, diversey sacco registration, become a member, sacco kenya membership, diverseysacco benefits"
+  url="https://diverseysacco.com/membership"
+  image="https://diverseysacco.com/logo.png"
 />
       <Header />
       
@@ -92,7 +92,7 @@ const navigate = useNavigate();
             <div className="space-y-6">
               <h2 className="text-3xl font-bold text-helb-green-800">Become a Member</h2>
               <p className="text-gray-700 leading-relaxed">
-                HELB REGULATED Non-WDT SACCO is a member-based organization whose membership is open to all 
+                DIVERSEY REGULATED Non-WDT SACCO is a member-based organization whose membership is open to all 
                 Kenyans anywhere in the world. Sacco admits eligible individuals, groups, and 
                 institutions/companies for membership of the Society upon fulfillment of 
                 membership opening requirements.
@@ -109,7 +109,7 @@ const navigate = useNavigate();
           {/* Membership Requirements */}
           <div className="mb-16">
             <h2 className="text-3xl font-bold text-helb-green-800 text-center mb-12">
-              Requirements for Joining HELB SACCO
+              Requirements for Joining DIVERSEY SACCO
             </h2>
             
             <div className="grid md:grid-cols-2 gap-8">

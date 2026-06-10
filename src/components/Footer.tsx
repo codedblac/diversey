@@ -12,9 +12,9 @@ const Footer = () => {
               About Us
             </h3>
             <p className="text-sm text-gray-300 mb-4">
-              HELB REGULATED Non-WDT Sacco Society Limited is a licensed Non
+              DIVERSEY REGULATED Non-WDT Sacco Society Limited is a licensed Non
               Withdrawable deposit taking (NWDT) SACCO that was formed to serve
-              the financial needs of HELB employees and their families. We
+              the financial needs of DIVERSEY employees and their families. We
               provide affordable financial services to help our members achieve
               their financial goals.
             </p>
@@ -50,14 +50,14 @@ const Footer = () => {
                   Other Products & Services
                 </Link>
               </li> */}
-              {/* <li>
+              { <li>
                 <Link
                   to="/helb-investment"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  HELB Investment
+                  DIVERSEY Investment
                 </Link>
-              </li> */}
+              </li> }
             </ul>
           </div>
 
@@ -83,14 +83,14 @@ const Footer = () => {
                   Membership
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   to="/leadership"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   Leadership & Governance
                 </Link>
-              </li>
+              </li> */}
               {/* <li>
                 <Link
                   to="/departments"
@@ -108,11 +108,11 @@ const Footer = () => {
               Contact
             </h3>
             <div className="space-y-2 text-sm text-gray-300 mb-4">
-              <p>📧 memberservices.co.ke</p>
-              <p>📞 Tel +254 711052499/799</p>
+              <p>📧 info@diverseysacco.com</p>
+              <p>📞 Tel +254 711******/799</p>
               <div className="mt-2">
                 <p className="font-medium">
-                  HELB REGULATED Non-WDT SACCO SOCIETY
+                  DIVERSEY REGULATED Non-WDT SACCO SOCIETY
                 </p>
                 <p>LTD P.O. Box 69489 - 00400,</p>
                 <p>NAIROBI, KENYA</p>
@@ -125,7 +125,7 @@ const Footer = () => {
             <ul className="space-y-1 text-sm">
               <li>
                 <a
-                  href="https://members.helbsacco.co.ke/site/login"
+                  href="https://diverseysacco.com/login"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-white transition-colors"
@@ -155,14 +155,14 @@ const Footer = () => {
                   News And Media
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   to="/resources"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   Tender Publications
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
@@ -170,7 +170,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-helb-green-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-gray-300">
-  © {new Date().getFullYear()} Copyrights by HELB REGULATED Non-WDT
+  © {new Date().getFullYear()} Copyrights by DIVERSEY REGULATED Non-WDT
   Sacco Society Limited. All Rights Reserved <br /> <br />
   Designed by{" "}
   <a

@@ -10,9 +10,9 @@ const HeroSection = () => {
   const slides = [
     {
       image: "img/helb1.jpg",
-      title: "HELB Regulated Non-WDT Sacco Society Limited",
+      title: "DIVERSEY Regulated Non-WDT Sacco Society Limited",
       subtitle: "Your Trusted Financial Partner",
-      description: "Empowering HELB employees and their families with affordable financial services and innovative solutions for a better tomorrow.",
+      description: "Empowering DIVERSEY employees and their families with affordable financial services and innovative solutions for a better tomorrow.",
       buttonText: "JOIN TODAY",
       buttonLink: "/membership",
       features: ["20+ Years of Excellence", "300+ Active Members", "Nationwide Presence"]
@@ -29,7 +29,7 @@ const HeroSection = () => {
     {
   image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2000",
   title: "Empowering Dreams, Enriching Lives",
-  subtitle: "Join HELB REGULATED Non-WDT SACCO – Your Partner in Financial Growth",
+  subtitle: "Join DIVERSEY REGULATED Non-WDT SACCO – Your Partner in Financial Growth",
   description: "Plan your life, live without stress. Save, Borrow, Invest, Repay with ease.",
   buttonText: "Join Us Now",
   buttonLink: "/membership",

@@ -85,11 +85,11 @@ const SavingsProducts = () => {
     <div className="min-h-screen bg-gray-50">
       
 <SEO
-  title="Savings Products - HELBSacco"
-  description="Discover HELBSacco’s flexible savings products tailored to help you grow your wealth. Secure options, competitive interest rates, and member-first services."
-  keywords="helb sacco savings, sacco savings products, savings accounts, helbsacco kenya, junior savings, withdrawable savings, deposits"
-  url="https://helbsacco.co.ke/savings"
-  image="https://helbsacco.co.ke/logo.png"
+  title="Savings Products - DIVERSEYSacco"
+  description="Discover DIVERSEYSacco’s flexible savings products tailored to help you grow your wealth. Secure options, competitive interest rates, and member-first services."
+  keywords="diverseysacco savings, sacco savings products, savings accounts, diverseysacco kenya, junior savings, withdrawable savings, deposits"
+  url="https://diverseysacco.com/savings"
+  image="https://diverseysacco.com/logo.png"
 />
       <Header />
       

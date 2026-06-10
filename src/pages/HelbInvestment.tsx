@@ -25,12 +25,12 @@ const HelbInvestment = () => {
 
   const investmentProjects = [
     {
-      title: "HELB Kangundo Phase 1",
+      title: "Kangundo Phase 1",
       color: "bg-orange-500",
       status: "Sold Out"
     },
     {
-      title: "HELB Kangundo Phase 2", 
+      title: "Kangundo Phase 2", 
       color: "bg-amber-500",
       status: "Available"
     },
@@ -64,7 +64,7 @@ const HelbInvestment = () => {
       <section className="bg-helb-green-700 text-white py-16">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold text-center text-helb-gold-400">
-            HELB Investment
+            DIVERSEY Investment
           </h1>
         </div>
       </section>
@@ -77,7 +77,7 @@ const HelbInvestment = () => {
             <div className="animate-on-scroll">
               <img 
                 src="img/helb_invest.jpg" 
-                alt="HELB Investment Opportunity"
+                alt="DIVERSEY Investment Opportunity"
                 className="rounded-lg shadow-lg w-full h-96 object-cover"
               />
             </div>
@@ -86,7 +86,7 @@ const HelbInvestment = () => {
             <div className="animate-on-scroll">
               <h3 className="text-sm font-semibold text-helb-green-600 mb-2">About</h3>
               <h2 className="text-3xl font-bold text-helb-green-700 mb-6">
-                HELB Investment
+                DIVERSEY Investment
               </h2>
               <p className="text-gray-600 leading-relaxed">
                 Secure a valuable asset that appreciates over time. Benefit from the 
@@ -134,7 +134,7 @@ const HelbInvestment = () => {
                 loading="lazy" 
                 referrerPolicy="no-referrer-when-downgrade"
                 className="rounded-lg shadow-lg"
-                title="HELB Centre Building Location"
+                title="DIVERSEY Centre Building Location"
               ></iframe>
             </div>
 
@@ -147,7 +147,7 @@ const HelbInvestment = () => {
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-helb-green-600 rounded-full"></div>
-                  <span className="text-gray-700">Address: HELB Centre Building | 5th Floor</span>
+                  <span className="text-gray-700">Address: DIVERSEY Centre Building | 5th Floor</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-helb-green-600 rounded-full"></div>
@@ -155,7 +155,7 @@ const HelbInvestment = () => {
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-helb-green-600 rounded-full"></div>
-                  <span className="text-gray-700">Email: investments@helbsacco.com</span>
+                  <span className="text-gray-700">Email: investments@diverseysacco.com</span>
                 </div>
               </div>
             </div>

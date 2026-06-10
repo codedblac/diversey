@@ -9,11 +9,11 @@ const About = () => {
   return (
     <div className="min-h-screen">
       <SEO
-      title="About HELBSacco"
-      description="Learn more about HELBSacco, our mission, vision, leadership, and commitment to empowering our members with reliable financial solutions."
-      keywords="about HELBSacco, sacco in Kenya, financial solutions, mission, vision, leadership"
-      url="https://helbsacco.co.ke/about"
-      image="https://helbsacco.co.ke/logo.png"
+      title="About DIVERSEYSacco"
+      description="Learn more about DIVERSEYSacco, our mission, vision, leadership, and commitment to empowering our members with reliable financial solutions."
+      keywords="about DIVERSEYSacco, sacco in Kenya, financial solutions, mission, vision, leadership"
+      url="https://diverseysacco.com/about"
+      image="https://diverseysacco.com/logo.png"
     />
       <Header />
       
@@ -22,7 +22,7 @@ const About = () => {
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Who We Are</h1>
           <p className="text-xl max-w-3xl mx-auto">
-            Learn about HELB REGULATED Non-WDT Sacco Society Limited and our commitment to serving our members
+            Learn about DIVERSEY REGULATED Non-WDT Sacco Society Limited and our commitment to serving our members
           </p>
         </div>
       </section>
@@ -34,7 +34,7 @@ const About = () => {
             <div>
               <img
                 src="img/helb1.jpg"
-                alt="HELB Sacco Team Meeting"
+                alt="DIVERSEYSacco Team Meeting"
                 className="rounded-lg shadow-xl w-full h-96 object-cover"
               />
             </div>
@@ -45,7 +45,7 @@ const About = () => {
               
               <div className="space-y-4 text-gray-700 leading-relaxed">
   <p>
-    HELB Savings and Credit Society Ltd was established and registered in March 1997 to provide HELB staff with an avenue for savings and offer loans at low interest rates for the advancement of their economic well-being. Over the years, the Sacco has grown steadily in membership, share capital, deposits, and other savings.
+    DIVERSEY Savings and Credit Society Ltd was established and registered in March 1997 to provide DIVERSEY staff with an avenue for savings and offer loans at low interest rates for the advancement of their economic well-being. Over the years, the Sacco has grown steadily in membership, share capital, deposits, and other savings.
   </p>
 
   <p>
@@ -124,7 +124,7 @@ const About = () => {
 
           {/* Additional Information */}
           <div className="bg-helb-green-50 rounded-lg p-8">
-            <h3 className="text-2xl font-bold text-helb-green-800 mb-6">Why Choose HELB REGULATED Non-WDT Sacco?</h3>
+            <h3 className="text-2xl font-bold text-helb-green-800 mb-6">Why Choose DIVERSEY REGULATED Non-WDT Sacco?</h3>
             <div className="grid md:grid-cols-2 gap-8">
               <div>
                 <h4 className="text-lg font-semibold text-helb-green-700 mb-3">Our Core Business</h4>

@@ -30,7 +30,7 @@ const ServicePortal = () => {
             Service Portal
           </h1>
           <p className="text-center text-lg mt-4 opacity-90">
-            Access HELB Sacco's partner and service provider management system
+            Access DIVERSEY Sacco's partner and service provider management system
           </p>
         </div>
       </section>
@@ -141,7 +141,7 @@ const ServicePortal = () => {
               <div className="relative">
                 <img 
                   src={leadershipImg} 
-                  alt="HELB Sacco Service Portal"
+                  alt="DIVERSEY Sacco Service Portal"
                   className="rounded-lg shadow-lg w-full h-96 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-helb-green-700/80 to-transparent rounded-lg"></div>

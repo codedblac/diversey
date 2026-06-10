@@ -117,11 +117,11 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <SEO
-        title="HELBSacco - Home"
-        description="Welcome to HELBSacco, your trusted partner in financial solutions."
-        keywords="sacco, helb, loans, savings, kenya"
-        url="https://helbsacco.co.ke/"
-        image="https://helbsacco.co.ke/logo.png"
+        title="DIVERSEYSacco - Home"
+        description="Welcome to DIVERSEYSacco, your trusted partner in financial solutions."
+        keywords="sacco, diversey, loans, savings, kenya"
+        url="https://diverseysacco.com/"
+        image="https://diverseysacco.com/logo.png"
       />
       <Header />
 
@@ -174,7 +174,7 @@ const Index = () => {
             <div className="animate-on-scroll slide-in-left">
               <img
                 src="/img/helb5.jpg"
-                alt="HELB Sacco Team"
+                alt="DIVERSEY Sacco Team"
                 className="rounded-2xl shadow-2xl w-full h-[500px] object-cover"
               />
             </div>
@@ -371,7 +371,7 @@ const Index = () => {
             <div className="animate-on-scroll slide-in-left">
               <img
                 src="/img/helb5.jpg"
-                alt="HELB REGULATED Non-WDT Sacco Team"
+                alt="DIVERSEY REGULATED Non-WDT Sacco Team"
                 className="rounded-2xl shadow-2xl w-full h-[500px] object-cover"
               />
             </div>
@@ -382,7 +382,7 @@ const Index = () => {
                 Why Join Us
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                Discover why thousands trust HELB REGULATED Non-WDT Sacco for
+                Discover why thousands trust DIVERSEY REGULATED Non-WDT Sacco for
                 secure and flexible financial solutions.
               </p>
               <ul className="space-y-5">
@@ -420,7 +420,7 @@ const Index = () => {
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-5xl mx-auto animate-on-scroll">
             <h2 className="text-5xl font-bold mb-8">
-              Join HELB REGULATED Non-WDT Sacco Today
+              Join DIVERSEY REGULATED Non-WDT Sacco Today
             </h2>
             <p className="text-xl mb-10 leading-relaxed max-w-4xl mx-auto">
               Become part of our growing family and enjoy exclusive benefits,
@@ -483,9 +483,9 @@ const Index = () => {
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Write us</h3>
                     <p className="mb-1 text-gray-200">Email us at:</p>
-                    <p className="text-lg">memberservices.co.ke</p>
-                    {/* <p className="text-lg">customercare@helbsacco.com</p>
-                    <p className="text-lg">publicrelations@helbsacco.com</p> */}
+                    <p className="text-lg">memberservices@diverseysacco.com</p>
+                    {/* <p className="text-lg">customercare@diverseysacco.com</p>
+                    <p className="text-lg">publicrelations@diverseysacco.com</p> */}
                   </div>
                 </div>
 
@@ -496,7 +496,7 @@ const Index = () => {
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Visit us</h3>
                     <p className="text-lg">
-                      Customer Care, HELB Centre, Anniversary Towers, Nairobi
+                      Customer Care, DIVERSEY Centre, Anniversary Towers, Nairobi
                     </p>
                   </div>
                 </div>
@@ -514,7 +514,7 @@ const Index = () => {
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="HELB REGULATED Non-WDT Sacco Location"
+                    title="DIVERSEY REGULATED Non-WDT Sacco Location"
                   ></iframe>
                 </div>
               </div>

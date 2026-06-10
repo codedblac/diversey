@@ -19,15 +19,16 @@ const Header = () => {
   const aboutUsItems = [
     { title: 'Who We Are', href: '/about' },
     // { title: 'Become a Member', href: '/membership' },
-    { title: 'Board Of Directors', href: '/leadership' },
-    { title: 'Supervisory Committee', href: '/supervisory' },
-    { title: 'Management Team', href: '/management' },
+    // { title: 'Board Of Directors', href: '/leadership' },
+    // { title: 'Supervisory Committee', href: '/supervisory' },
+    // { title: 'Management Team', href: '/management' },
   ];
 
   // ✅ Keep: Products dropdown
   const productsItems = [
     { title: 'Loan Products', href: '/loans' },
     { title: 'Savings Products', href: '/savings' },
+    { title: 'Diversey Investment', href: '/helb-investment' },
   ];
 
   // ✅ Reusable Dropdown Component
@@ -81,11 +82,11 @@ const Header = () => {
       <div className="bg-helb-green-800 text-white py-2 px-4">
         <div className="container mx-auto flex justify-between items-center text-sm">
           <div className="flex items-center space-x-6">
-            <span>📧 memberservices.co.ke</span>
-            <span>📞 +254 711052499/799</span>
+            <span>📧 info@diverseysacco.com</span>
+            <span>📞 +254 711******/799</span>
           </div>
           <div className="hidden md:flex items-center space-x-4">
-            <span>HELB REGULATED NON-WDT SACCO SOCIETY LTD P.O. Box 69489 - 00400, NAIROBI</span>
+            <span>DIVERSEY REGULATED NON-WDT SACCO SOCIETY LTD P.O. Box 69489 - 00400, NAIROBI</span>
           </div>
         </div>
       </div>
@@ -96,15 +97,16 @@ const Header = () => {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-3">
-              <div className="w-14 h-14 bg-helb-green-600 square-full flex items-center justify-center">
-                <img src="/Logo.jpg" alt="HELB Sacco Logo" className='square-full' />
+              <div className="w-20 h-5 bg-helb-green-600 square-full flex items-center justify-center">
+                <img src="/diversey.png" alt="DIVERSEY Sacco Logo" className='square-full' />
               </div>
             </Link>
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
               <Link to="/" className="text-gray-700 hover:text-helb-green-600 font-medium transition-colors">HOME</Link>
-              <Dropdown title="ABOUT US" items={aboutUsItems} dropdownKey="about" />
+              <Link to="/about" className="text-gray-700 hover:text-helb-green-600 font-medium transition-colors">ABOUT US</Link>
+              {/* <Dropdown title="ABOUT US" items={aboutUsItems} dropdownKey="about" /> */}
               <Dropdown title="PRODUCTS" items={productsItems} dropdownKey="products" />
               <Link
                 to="/membership"
@@ -116,7 +118,7 @@ const Header = () => {
               <Link to="/faqs" className="text-gray-700 hover:text-helb-green-600 font-medium transition-colors">FAQS</Link>
               <Link to="/contact" className="text-gray-700 hover:text-helb-green-600 font-medium transition-colors">CONTACT US</Link>
               {/* Login Button (Desktop) */}
-              <a href="https://members.helbsacco.co.ke/site/login">
+              <a href="https://diverseysacco.com/members/account">
               <Button className="bg-helb-green-600 hover:bg-helb-green-700 text-white">
               Member Login
               </Button>
@@ -166,7 +168,7 @@ const Header = () => {
               <Link to="/faqs" className="block text-gray-700 hover:text-helb-green-600 font-medium">FAQS</Link>
               <Link to="/contact" className="block text-gray-700 hover:text-helb-green-600 font-medium">CONTACT US</Link>
               <button
-              onClick={() => window.location.href = 'https://members.helbsacco.co.ke/site/login'}
+              onClick={() => window.location.href = 'https://diverseysacco.com/members/join'}
               className="block w-full bg-helb-green-600 hover:bg-helb-green-700 text-white py-2 px-4 rounded"
               >
                 Member Login

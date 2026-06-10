@@ -11,7 +11,7 @@ interface Faq {
 
 const faqs: Faq[] = [
   {
-    question: "How do I become a member of Helb Sacco?",
+    question: "How do I become a member of DIVERSEY Sacco?",
     answer: (
       <ul className="list-disc pl-5 space-y-1">
         <li>Fill in a membership application form.</li>
@@ -128,11 +128,11 @@ const Faqs = () => {
   return (
     <>
     <SEO
-  title="FAQs - HELBSacco"
-  description="Find answers to the most frequently asked questions about HELBSacco's services, membership, loans, savings, and support."
-  keywords="HELBSacco FAQs, helb sacco questions, sacco help, loan questions, membership info, savings FAQ, helb sacco kenya"
-  url="https://helbsacco.co.ke/faqs"
-  image="https://helbsacco.co.ke/logo.png"
+  title="FAQs - DIVERSEYSacco"
+  description="Find answers to the most frequently asked questions about DIVERSEYSacco's services, membership, loans, savings, and support."
+  keywords="DIVERSEYSacco FAQs, diversey sacco questions, sacco help, loan questions, membership info, savings FAQ, DIVERSEYSacco kenya"
+  url="https://diverseysacco.com/faqs"
+  image="https://diverseysacco.com/logo.png"
 />
       {/* Navigation Bar */}
       <Header />

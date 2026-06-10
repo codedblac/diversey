@@ -142,7 +142,7 @@ const LoanProducts = () => {
   {
     id: 11,
     title: "Maisha Bora Loan",
-    description: "Helps members acquire products/services from partners with MOUs with HELB SACCO LTD.",
+    description: "Helps members acquire products/services from partners with MOUs with DIVERSEY SACCO LTD.",
     image: "/img/maisha-bora.webp",
     details: [
       "No cash payments to members",
@@ -210,11 +210,11 @@ const LoanProducts = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <SEO
-  title="Loan Products - HELBSacco"
-  description="Explore HELBSacco’s wide range of loan products designed to support your financial goals. Flexible terms, affordable rates, and member-focused solutions."
-  keywords="helb sacco loans, sacco loan products, personal loans, business loans, helbsacco kenya loans, development loans"
-  url="https://helbsacco.co.ke/loans"
-  image="https://helbsacco.co.ke/logo.png"
+  title="Loan Products - DIVERSEYSacco"
+  description="Explore DIVERSEYSacco’s wide range of loan products designed to support your financial goals. Flexible terms, affordable rates, and member-focused solutions."
+  keywords="diversey sacco loans, sacco loan products, personal loans, business loans, diverseysacco kenya loans, development loans"
+  url="https://diverseysacco.com/loans"
+  image="https://diverseysacco.com/logo.png"
 />
       <Header />
       
@@ -235,7 +235,7 @@ const LoanProducts = () => {
             <div className="animate-on-scroll">
               <img 
                 src="img/loan.jpg" 
-                alt="HELB Sacco Loans"
+                alt="DIVERSEY Sacco Loans"
                 className="rounded-lg shadow-lg w-full h-96 object-cover"
               />
             </div>
@@ -244,7 +244,7 @@ const LoanProducts = () => {
                 Comprehensive Loan Portfolio
               </h2>
               <p className="text-gray-600 mb-4">
-                HELB Sacco Society Limited offers a wide range of loan products designed to meet the diverse financial needs of our members. From development loans to emergency assistance, we provide competitive rates and flexible terms to help you achieve your financial goals.
+                DIVERSEY Sacco Society Limited offers a wide range of loan products designed to meet the diverse financial needs of our members. From development loans to emergency assistance, we provide competitive rates and flexible terms to help you achieve your financial goals.
               </p>
             </div>
           </div>

@@ -74,7 +74,7 @@ const Leadership = () => {
   const boardMembers = [
     {
       name: "Josiah Muema Nzuki",
-      position: "Board Chairman – HELB SACCO",
+      position: "Board Chairman – DIVERSEY SACCO",
       image: "staffpics/Josiah.jpg",
       bio: `Josiah holds a master’s degree in leadership (MAL) from Pan Africa Christian University (PACU), a post graduate diploma in corporate governance from KCA University and a Bachelor of Commerce degree (Accounting) from University of Nairobi (UON)
 Currently retired he has experience and practical skills in Public financial management, audit, corporate leadership and governance, and risk management, having worked in the public sector for a period spanning over thirty (30) years. 

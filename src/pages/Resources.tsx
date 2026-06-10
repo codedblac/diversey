@@ -61,11 +61,11 @@ const Resources = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <SEO
-        title="Resources - HELBSacco"
-        description="Access helpful resources from HELBSacco including downloadable forms, policy documents, guides, and financial education materials."
-        keywords="helbsacco resources, sacco forms, helb sacco documents, sacco guides, financial education, helbsacco downloads"
-        url="https://helbsacco.co.ke/resources"
-        image="https://helbsacco.co.ke/logo.png"
+        title="Resources - DIVERSEYSacco"
+        description="Access helpful resources from DIVERSEYSacco including downloadable forms, policy documents, guides, and financial education materials."
+        keywords="diverseysacco resources, sacco forms, diversey sacco documents, sacco guides, financial education, diverseysacco downloads"
+        url="https://diverseysacco.com/resources"
+        image="https://diverseysacco.com/logo.png"
       />
       <Header />
 
@@ -86,7 +86,7 @@ const Resources = () => {
             <div className="animate-on-scroll">
               <img
                 src="img/resources.jpg"
-                alt="HELB Sacco Resources"
+                alt="DIVERSEY Sacco Resources"
                 className="rounded-lg shadow-lg w-full h-96 object-cover"
               />
             </div>
@@ -94,7 +94,7 @@ const Resources = () => {
             {/* Features */}
             <div className="animate-on-scroll">
               <h2 className="text-3xl font-bold text-helb-green-700 mb-6">
-                Why Choose HELB REGULATED Non-WDT Sacco?
+                Why Choose DIVERSEY REGULATED Non-WDT Sacco?
               </h2>
               <ul className="space-y-3">
                 {features.map((feature, index) => (

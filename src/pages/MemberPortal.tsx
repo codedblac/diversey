@@ -39,7 +39,7 @@ const MemberPortal = () => {
             Member Portal
           </h1>
           <p className="text-center text-lg mt-4 opacity-90">
-            Access your HELB Sacco account and manage your finances securely
+            Access your diversey Sacco account and manage your finances securely
           </p>
         </div>
       </section>
@@ -56,7 +56,7 @@ const MemberPortal = () => {
                     <User className="w-8 h-8 text-white" />
                   </div>
                   <CardTitle className="text-2xl font-bold text-helb-green-700">
-                    {isSignIn ? 'Welcome Back' : 'Join HELB Sacco'}
+                    {isSignIn ? 'Welcome Back' : 'Join DIVERSEY Sacco'}
                   </CardTitle>
                   <CardDescription>
                     {isSignIn 
@@ -172,7 +172,7 @@ const MemberPortal = () => {
                             <Building className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
                             <Input
                               id="memberNumber"
-                              placeholder="HELB000000"
+                              placeholder="DIVERSEY000000"
                               className="pl-10"
                               required
                             />
@@ -243,7 +243,7 @@ const MemberPortal = () => {
               <div className="relative">
                 <img 
                   src={leadershipImg}  
-                  alt="HELB Sacco Member Portal"
+                  alt="DIVERSEY Sacco Member Portal"
                   className="rounded-lg shadow-lg w-full h-96 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-helb-green-700/80 to-transparent rounded-lg"></div>
