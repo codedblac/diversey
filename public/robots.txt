@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://helbsacco.co.ke/sitemap.xml
+Sitemap: https://diverseysacco.com/sitemap.xml

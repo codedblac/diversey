@@ -1,79 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Homepage -->
+  <!-- Homepage -->s
   <url>
-    <loc>https://helbsacco.co.ke/</loc>
+    <loc>https://diverseysacco.com/</loc>
     <priority>1.00</priority>
     <changefreq>daily</changefreq>
   </url>
 
   <!-- About Page -->
   <url>
-    <loc>https://helbsacco.co.ke/about</loc>
+    <loc>https://diverseysacco.com/about</loc>
     <priority>0.80</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <!-- Products Page -->
   <url>
-    <loc>https://helbsacco.co.ke/products</loc>
+    <loc>https://diverseysacco.com/products</loc>
     <priority>0.80</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <!-- Membership Page -->
   <url>
-    <loc>https://helbsacco.co.ke/membership</loc>
+    <loc>https://diverseysacco.com/membership</loc>
     <priority>0.75</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <!-- Downloads Page -->
   <url>
-    <loc>https://helbsacco.co.ke/downloads</loc>
+    <loc>https://diverseysacco.com/downloads</loc>
     <priority>0.70</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <!-- FAQs Page -->
   <url>
-    <loc>https://helbsacco.co.ke/faqs</loc>
+    <loc>https://diverseysacco.com/faqs</loc>
     <priority>0.70</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <!-- Contact Page -->
   <url>
-    <loc>https://helbsacco.co.ke/contact</loc>
+    <loc>https://diverseysacco.com/contact</loc>
     <priority>0.80</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <!-- Leadership Page -->
   <url>
-    <loc>https://helbsacco.co.ke/leadership</loc>
+    <loc>https://diverseysacco.com/leadership</loc>
     <priority>0.70</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <!-- Loans Page -->
   <url>
-    <loc>https://helbsacco.co.ke/loans</loc>
+    <loc>https://diverseysacco.com/loans</loc>
     <priority>0.75</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <!-- Savings Page -->
   <url>
-    <loc>https://helbsacco.co.ke/savings</loc>
+    <loc>https://diverseysacco.com/savings</loc>
     <priority>0.75</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <!-- Member Login (Subdomain) -->
   <url>
-    <loc>https://members.helbsacco.co.ke/site/login</loc>
+    <loc>https://members.diverseysacco.com/site/login</loc>
     <priority>0.50</priority>
     <changefreq>monthly</changefreq>
   </url>

@@ -1,4 +1,4 @@
-# Helb Sacco web App
+# Diversey Sacco web App
 
 ## Project info
 
